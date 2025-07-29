@@ -1,0 +1,51 @@
+.hero {
+  background-image: url('/Group.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+.hero-content h1{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: medium;
+}
+
+.hero-content h1 span{
+    color: #25FFA9;
+}
+
+.btn1{
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #5454E8;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+
+.btn2{
+    width: 110px;
+    height: 40px;
+    border:2px solid #fff;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    color: #fff;
+    margin: 12px;
+}

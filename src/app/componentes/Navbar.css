@@ -1,0 +1,36 @@
+.header{
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 450px;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 1;
+    position: sticky;
+    position: absolute;
+    top: 20px;
+    background-color: #fff;
+    width: 80%;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.nav-links ul button{
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #5454E8;
+    border-radius: 10px;
+    color: #fff;
+}

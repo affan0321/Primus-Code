@@ -1,0 +1,40 @@
+.offer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 40px;
+    
+}
+.offer-text h1{
+    color: #1C2F58FC;
+    margin-bottom: 5px;
+}
+.offer-text p{
+    font-size: 12px;
+    color: #00000099;
+    margin-bottom: 5px;
+}
+.offer-text img{
+    width: 500px;
+}
+.offer-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.offer-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 90px;
+}
+.offer-content h3{
+    color: #1C2F58FC;
+}
+.offer-content p{
+    font-size: 14px;
+    color: #00000099;
+}
