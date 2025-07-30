@@ -6,6 +6,11 @@ import Work from './componentes/Work';
 import Banner from './componentes/Banner';
 import Projects from './componentes/Projects';
 import Offer from './componentes/Offer';
+import Company from './componentes/Company';
+import Comments from './componentes/Comments';
+import Questions from './componentes/Questions';
+import Build from './componentes/Build';
+import Footer from './componentes/Footer';
 const App = () => {
   return (
     <div>
@@ -16,6 +21,11 @@ const App = () => {
       <Banner />
       <Projects />
       <Offer />
+      <Company />
+      <Comments />
+      <Questions />
+      <Build />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,121 @@
+.company{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.img-container {
+  background-image: url("/index2 (2).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.text-container{
+    background-image: url("/Company image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 250px;
+    /* border: 2px solid black; */
+    align-content: center;
+    border-radius: 10px;
+}
+
+.text-container h2{
+    color: #1C2F58FC;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text-container p{
+    font-size: 12px;
+    color: #1C2F58FC;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.text-container span{
+    color: #5454E8;
+}
+
+.text-container .btn6{
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #5454E8;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+.img-container1{
+    background-image: url("/index2 (1).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.img-container2{
+    background-image: url("/index2 (5).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.img-container3{
+    background-image: url("/index2 (4).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.img-container4{
+    background-image: url("/index2 (3).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.img-text{
+    width: 80%;
+    margin: 0 auto;
+    align-content: flex-end;
+    /* border: 2px solid black; */
+    height: 240px;
+    
+}
+
+.img-text h3{
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+.img-text p{
+    color: #25FFA9;
+    font-size: 12px;
+}

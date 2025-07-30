@@ -1,0 +1,40 @@
+.questions{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.questions-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+
+.questions-content{
+     width: 100%;
+}
+
+
+.questions-text h2{
+    color: #1C2F58FC;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.questions-text p{
+    /* font-size: 12px; */
+    color: #00000099;
+    margin-bottom: 20px;
+}
+
+.questions-text .btn7{
+    width: 170px;
+    height: 40px;
+    background-color: #5454E8;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+}
