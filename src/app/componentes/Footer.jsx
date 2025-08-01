@@ -29,9 +29,9 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <p>Email: info@primuscode.com</p>
-                    <p>Phone: 111-222-1212</p>
-                    <p>Address: 111-222-1212</p>
+                    <p><b>Email:</b> info@primuscode.com</p>
+                    <p><b>Phone:</b> 111-222-1212</p>
+                    <p><b>Address:</b> 111-222-1212</p>
                 </div>
             </div>
             </div>

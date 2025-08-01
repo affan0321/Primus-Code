@@ -32,7 +32,7 @@
 }
 
 .projects-btn-text{
-    width: 350px;
+    width: 300px;
     height: 40px;
     border: none;
     outline: none;
@@ -46,6 +46,8 @@
 
 .projects-btn-text p{
     color: #1C2F58FC;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .projects-img{
