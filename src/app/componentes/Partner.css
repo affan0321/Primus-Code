@@ -46,3 +46,88 @@
     color: #5454E8;
     background: transparent;
 }
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .partner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .partner-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .partner-content {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .partner-text {
+    width: 90%;
+  }
+
+  .partner-text h2 {
+    font-size: 26px;
+  }
+
+  .partner-text p {
+    font-size: 14px;
+  }
+}
+
+/* Small Tablets and Large Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .partner-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .partner-content h1 {
+    font-size: 38px;
+  }
+
+  .partner-text h2 {
+    font-size: 22px;
+  }
+
+  .partner-text p {
+    font-size: 13px;
+  }
+
+  .btn3 {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .partner {
+    padding: 20px 10px;
+  }
+
+  .partner-content h1 {
+    font-size: 30px;
+  }
+
+  .partner-text h2 {
+    font-size: 20px;
+  }
+
+  .partner-text p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .btn3 {
+    font-size: 13px;
+  }
+}

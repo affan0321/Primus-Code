@@ -378,3 +378,105 @@
   color: #838696;
 
 }
+
+/* Tablets: iPads, Surface, etc. */
+@media (max-width: 1024px) {
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-container > .work-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .work-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .work-card.wide,
+  .work-card.narrow {
+    width: 90% !important;
+    height: auto;
+  }
+
+  .work-card.wide h3,
+  .work-card.narrow h3 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .work-card ul {
+    width: 90% !important;
+  }
+}
+
+/* Mobile: iPhone XR, SE, Samsung A51, Foldables */
+@media (max-width: 768px) {
+  .work-text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .work-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .work-container {
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .work-container > .work-card {
+    width: 100%;
+    padding: 12px;
+    height: auto;
+  }
+
+  .work-card h3 {
+    font-size: 20px;
+  }
+
+  .work-card ul li {
+    font-size: 14px;
+  }
+
+  .work-card ul {
+    width: 100%;
+  }
+
+  .work-card.wide,
+  .work-card.narrow {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .work-card.wide h3,
+  .work-card.narrow h3 {
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices (e.g. iPhone SE, Galaxy Fold inner screen) */
+@media (max-width: 420px) {
+  .work-text h2 {
+    font-size: 20px;
+  }
+
+  .work-text p {
+    font-size: 13px;
+  }
+
+  .work-card h3 {
+    font-size: 18px;
+  }
+
+  .work-card ul li {
+    font-size: 13px;
+  }
+}

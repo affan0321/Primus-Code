@@ -25,3 +25,69 @@
     color: #000;
     
 }
+
+/* Tablets: iPads, Surface, etc. */
+@media (max-width: 1024px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .btn4 {
+    margin-top: 10px;
+  }
+}
+
+/* Mobile: Phones, Foldables */
+@media (max-width: 768px) {
+  .banner {
+    width: 90%;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 16px;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  .banner-text p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .btn4 {
+    width: 100px;
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 420px) {
+  .banner h2 {
+    font-size: 18px;
+  }
+
+  .banner-text p {
+    font-size: 12px;
+  }
+
+  .btn4 {
+    width: 95px;
+    height: 35px;
+    font-size: 13px;
+  }
+}

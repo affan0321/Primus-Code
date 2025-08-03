@@ -84,3 +84,72 @@
     align-content: center;
     margin-top: 20px;
 }
+
+
+@media (max-width: 992px) {
+  .build-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 20px;
+  }
+
+  .build-header,
+  .build-form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .build-header-text img {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .build-header-text h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .build-header-text p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .btn8 {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    margin: 20px auto 0;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .build-header-text h3 {
+    font-size: 22px;
+  }
+
+  .build-header-text p {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
