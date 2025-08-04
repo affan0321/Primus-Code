@@ -1,12 +1,17 @@
-.company{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
+.company {
+  width: 80%;
+  margin: 0 auto;
+   display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin-top: 1000px; 
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; */
+  /* padding: 50px 10%; */
+  align-items: center;
 }
 .img-container {
   background-image: url("/index2 (2).png");
@@ -18,111 +23,108 @@
   border-radius: 10px;
 }
 
-.text-container{
-    background-image: url("/Company image.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 250px;
-    /* border: 2px solid black; */
-    align-content: center;
-    border-radius: 10px;
+.text-container {
+  background-image: url("/Company image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 250px;
+  /* border: 2px solid black; */
+  align-content: center;
+  border-radius: 10px;
 }
 
-.text-container h2{
-    color: #1C2F58FC;
-    text-align: center;
-    margin-bottom: 10px;
+.text-container h2 {
+  color: #1c2f58fc;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.text-container p{
-    font-size: 12px;
-    color: #1C2F58FC;
-    text-align: center;
-    margin-bottom: 10px;
-    
+.text-container p {
+  font-size: 12px;
+  color: #1c2f58fc;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.text-container span{
-    color: #5454E8;
-}
-
-.text-container .btn6{
-    width: 110px;
-    height: 40px;
-    border: none;
-    outline: none;
-    background-color: #5454E8;
-    border-radius: 10px;
-    color: #fff;
-    margin: 0 auto;
-    text-align: center;
-    align-content: center;
+.text-container span {
+  color: #5454e8;
 }
 
-.img-container1{
-    background-image: url("/index2 (1).png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
+.text-container .btn6 {
+  width: 110px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #5454e8;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
 }
 
-.img-container2{
-    background-image: url("/index2 (5).png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
+.img-container1 {
+  background-image: url("/index2 (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
 }
 
-.img-container3{
-    background-image: url("/index2 (4).png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
+.img-container2 {
+  background-image: url("/index2 (5).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
 }
 
-.img-container4{
-    background-image: url("/index2 (3).png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
+.img-container3 {
+  background-image: url("/index2 (4).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
 }
 
-.img-text{
-    width: 80%;
-    margin: 0 auto;
-    align-content: flex-end;
-    /* border: 2px solid black; */
-    height: 240px;
-    
+.img-container4 {
+  background-image: url("/index2 (3).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
 }
 
-.img-text h3{
-    color: #fff;
-    font-weight: 500;
-    
+.img-text {
+  width: 80%;
+  margin: 0 auto;
+  align-content: flex-end;
+  height: 240px;
 }
 
-.img-text p{
-    color: #25FFA9;
-    font-size: 12px;
+.img-text h3 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.img-text p {
+  color: #25ffa9;
+  font-size: 12px;
 }
 
 @media (max-width: 1024px) {
   .company {
-    justify-content: center;
+    justify-content: flex-start;
+    border: 2px solid black;
     gap: 30px;
   }
 
@@ -197,5 +199,141 @@
 
   .img-text {
     height: 200px;
+  }
+}
+/* 
+@media (min-width: 1200px) {
+  .company {
+    width: 75%;
+    gap: 30px;
+  }
+
+  .img-container,
+  .img-container1,
+  .img-container2,
+  .img-container3,
+  .img-container4 {
+    width: 320px;
+    height: 260px;
+  }
+
+  .text-container {
+    width: 420px;
+    height: 260px;
+  }
+
+  .text-container h2 {
+    font-size: 28px;
+  }
+
+  .text-container p {
+    font-size: 14px;
+  }
+
+  .text-container .btn6 {
+    width: 120px;
+    height: 42px;
+    font-size: 13px;
+  }
+
+  .img-text {
+    height: 250px;
+  }
+
+  .img-text h3 {
+    font-size: 20px;
+  }
+
+  .img-text p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .company {
+    width: 70%;
+    gap: 40px;
+  }
+
+  .img-container,
+  .img-container1,
+  .img-container2,
+  .img-container3,
+  .img-container4 {
+    width: 340px;
+    height: 270px;
+  }
+
+  .text-container {
+    width: 440px;
+    height: 270px;
+  }
+
+  .text-container h2 {
+    font-size: 30px;
+  }
+
+  .text-container p {
+    font-size: 15px;
+  }
+
+  .text-container .btn6 {
+    width: 130px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .img-text {
+    height: 260px;
+  }
+
+  .img-text h3 {
+    font-size: 22px;
+  }
+
+  .img-text p {
+    font-size: 14px;
+  }
+} */
+
+@media (min-width: 1040px) {
+  .company {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+
+  }
+
+  .img-container,
+  .img-container1,
+  .img-container2,
+  .img-container3,
+  .img-container4,
+  .text-container {
+    width: 100%;
+    max-width: 360px;
+    height: 230px;
+    margin: 0 auto;
+  }
+
+  .img-text {
+    height: 220px;
+    padding: 0 10px;
+  }
+
+  .text-container h2 {
+    font-size: 22px;
+  }
+
+  .text-container p,
+  .img-text p {
+    font-size: 12px;
+  }
+
+  .text-container .btn6 {
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
   }
 }

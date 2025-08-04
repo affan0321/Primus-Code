@@ -131,7 +131,7 @@
   }
 
   .testimonial-card {
-    height: auto;
+    height: 250px;
   }
 }
 
@@ -157,7 +157,7 @@
 
   .testimonial-card {
     width: 100%;
-    height: auto;
+    height: 250px;
   }
 
   .testimonial-content {
