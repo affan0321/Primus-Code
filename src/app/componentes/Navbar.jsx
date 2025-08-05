@@ -65,7 +65,7 @@ export default function Navbar() {
       <div className="navbar">
         <div style={{ width: "95%", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="logo">
-            <h5>PRIMUS <br /> CODE</h5>
+            <img src="/Logo-03.png" width={100} />
           </div>
 
           {/* Hamburger Icon */}

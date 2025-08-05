@@ -242,7 +242,7 @@ export default function Work() {
       </div>
 
       <div className="work-container">
-        <div style={{border:"2px solid grey"}} className="work-card">
+        <div className="work-card">
           <h3>Development & Implementation</h3>
           <ul>
             <li><a href="#">Website Development</a></li>

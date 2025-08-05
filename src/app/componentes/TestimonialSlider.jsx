@@ -191,88 +191,100 @@ const TestimonialSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        },
+      },
+    ],
   };
 
   return (
     <div className='testimonial-slider'>
-    <div className="testimonial-wrapper">
-      <div className="testimonial-header">
-        <h2>What Our Client Said About Us</h2>
-        <div className="testimonial-arrows">
-          <button onClick={goPrev}>&#8592;</button>
-          <button onClick={goNext}>&#8594;</button>
+      <div className="testimonial-wrapper">
+        <div className="testimonial-header">
+          <h2>What Our Client Said About Us</h2>
+          <div className="testimonial-arrows">
+            <button onClick={goPrev}>&#8592;</button>
+            <button onClick={goNext}>&#8594;</button>
+          </div>
+        </div>
+
+        <div className="testimonial-carousel">
+          <Slider {...settings} ref={sliderRef}>
+            {/* Card 1 */}
+            <div className="testimonial-card">
+              <div className="testimonial-inner">
+                <div className="top-section">
+                  <img src="/Ellipse 80.png" alt="Amelia Joseph" />
+                  <div className="name-title">
+                    <h3>Amelia Joseph</h3>
+                    <p className="title">Chief Manager</p>
+                  </div>
+                </div>
+                <p className="testimonial-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="testimonial-card">
+              <div className="testimonial-inner">
+                <div className="top-section">
+                  <img src="/Ellipse 80.png" alt="Amelia Joseph" />
+                  <div className="name-title">
+                    <h3>Amelia Joseph</h3>
+                    <p className="title">Chief Manager</p>
+                  </div>
+                </div>
+                <p className="testimonial-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="testimonial-card">
+              <div className="testimonial-inner">
+                <div className="top-section">
+                  <img src="/Ellipse 80.png" alt="Amelia Joseph" />
+                  <div className="name-title">
+                    <h3>Amelia Joseph</h3>
+                    <p className="title">Chief Manager</p>
+                  </div>
+                </div>
+                <p className="testimonial-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="testimonial-card">
+              <div className="testimonial-inner">
+                <div className="top-section">
+                  <img src="/Ellipse 80.png" alt="Amelia Joseph" />
+                  <div className="name-title">
+                    <h3>Amelia Joseph</h3>
+                    <p className="title">Chief Manager</p>
+                  </div>
+                </div>
+                <p className="testimonial-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+
+          </Slider>
         </div>
       </div>
-
-      <div className="testimonial-carousel">
-        <Slider {...settings} ref={sliderRef}>
-          {/* Card 1 */}
-          <div className="testimonial-card">
-            <div className="testimonial-inner">
-              <div className="top-section">
-                <img src="/Ellipse 80.png" alt="Amelia Joseph" />
-                <div className="name-title">
-                  <h3>Amelia Joseph</h3>
-                  <p className="title">Chief Manager</p>
-                </div>
-              </div>
-              <p className="testimonial-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="testimonial-card">
-            <div className="testimonial-inner">
-              <div className="top-section">
-                <img src="/Ellipse 80.png" alt="Amelia Joseph" />
-                <div className="name-title">
-                  <h3>Amelia Joseph</h3>
-                  <p className="title">Chief Manager</p>
-                </div>
-              </div>
-              <p className="testimonial-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="testimonial-card">
-            <div className="testimonial-inner">
-              <div className="top-section">
-                <img src="/Ellipse 80.png" alt="Amelia Joseph" />
-                <div className="name-title">
-                  <h3>Amelia Joseph</h3>
-                  <p className="title">Chief Manager</p>
-                </div>
-              </div>
-              <p className="testimonial-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="testimonial-card">
-            <div className="testimonial-inner">
-              <div className="top-section">
-                <img src="/Ellipse 80.png" alt="Amelia Joseph" />
-                <div className="name-title">
-                  <h3>Amelia Joseph</h3>
-                  <p className="title">Chief Manager</p>
-                </div>
-              </div>
-              <p className="testimonial-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-          </div>
-
-        </Slider>
-      </div>
-    </div>
     </div>
   );
 };

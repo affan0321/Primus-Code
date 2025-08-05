@@ -480,3 +480,172 @@
     font-size: 13px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .work-container,
+  .work-row {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .work-container > .work-card,
+  .work-card.wide,
+  .work-card.narrow {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .work-container > .work-card {
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .work-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .work-card.wide,
+  .work-card.narrow {
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .work-card h3 {
+    text-align: center;
+  }
+
+  .work-card ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+
+/* 
+@media (min-width: 1280px) {
+  .work {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .work-container {
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .work-container > .work-card {
+    width: 45%;
+    height: auto;
+  }
+
+  .work-card.wide {
+    width: 60%;
+    height: auto;
+  }
+
+  .work-card.narrow {
+    width: 35%;
+    height: auto;
+  }
+
+  .work-row {
+    gap: 60px;
+  }
+
+  .work-text h2 {
+    font-size: 36px;
+  }
+
+  .work-text p {
+    font-size: 17px;
+  }
+
+  .work-card h3 {
+    font-size: 22px;
+  }
+
+  .work-card ul li {
+    font-size: 15px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .work {
+    max-width: 1300px;
+  }
+
+  .work-card.wide {
+    width: 65%;
+  }
+
+  .work-card.narrow {
+    width: 30%;
+  }
+
+  .work-text h2 {
+    font-size: 40px;
+  }
+
+  .work-text p {
+    font-size: 18px;
+  }
+
+  .work-card h3 {
+    font-size: 24px;
+  }
+
+  .work-card ul li {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-container > .work-card {
+    width: 80%; 
+    height: auto;
+  }
+
+  .work-row {
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .work-card.wide,
+  .work-card.narrow {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .work-card ul {
+    width: 90% !important;
+  }
+
+  .work-card.wide h3,
+  .work-card.narrow h3 {
+    text-align: center;
+    padding-left: 0;
+  }
+} */

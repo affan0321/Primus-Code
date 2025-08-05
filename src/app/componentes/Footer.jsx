@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='footer'>
             <div className='footer-content'>
             <div>
-                <h4>PRIMUS <br /> CODE</h4>
+                <img src="/Logo-04.png" width={100} />
                 <div className='social-icons'>
                     <div>
                         <img src="/instagram.png" width={20}/>
