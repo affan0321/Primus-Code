@@ -1,8 +1,8 @@
 import React from 'react';
 import './Partner.css';
-export default function Partner() {
+export default function Partner({ reverse = false }) {
     return (
-        <div className='partner'>
+        <div className={`partner ${reverse ? 'reverse' : ''}`}>
             <div className='partner-container'>
                 <div className='partner-content'>
                 <div>
@@ -28,10 +28,11 @@ export default function Partner() {
             </div>
             <div className='partner-text'>
                 <h2>Your Partner In Digital <br /> <span>Growth & Innovation</span></h2>
-                <p>At Primus Code, we don’t just build products, we create digital solutions that solve real <br /> business challenges. From websites and mobile apps to AI-driven systems and <br /> eCommerce platforms, our expert teams deliver tailored, scalable, and high-performing <br /> solutions designed around your goals.<br/>
-                    Whether you’re a startup looking to launch or an enterprise aiming to optimize and <br /> transform, we help you turn ideas into impact.</p>
+                <p>At Primus Code, we don’t just build products, we create digital solutions that solve real  business challenges. From websites and mobile apps to AI-driven systems and  eCommerce platforms, our expert teams deliver tailored, scalable, and high-performing  solutions designed around your goals.
+                    Whether you’re a startup looking to launch or an enterprise aiming to optimize and  transform, we help you turn ideas into impact.</p>
                 <button className='btn3'>Learn More &rarr;</button>
             </div>
+            
         </div>
     )
 }

@@ -1,0 +1,45 @@
+/* .core {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.core-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.third-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.core-card{
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    flex-direction: row;
+} */

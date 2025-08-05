@@ -4,19 +4,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 .partner-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 603px;
     height: 362px;
+    
 }
 .partner-content{
     display: flex;
     gap: 90px;
     flex-wrap: wrap;
     gap: 20px;
+}
+.partner.reverse {
+  flex-direction: row-reverse;
 }
 .partner-content h1{
     font-size: 60px;

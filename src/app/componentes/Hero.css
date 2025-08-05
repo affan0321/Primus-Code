@@ -210,9 +210,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  color: #fff;
+  height: 100%; 
   flex-wrap: wrap;
+  color: #fff;
 }
 
 /* ✅ Headline and text styles */
