@@ -7,7 +7,9 @@ export default function Questions() {
             <div className='questions-container'>
                 <div className='questions-text'>
                     <h2>Frequently Asked Questions</h2>
-                    <p>A simple, transparent process designed to keep you informed and <br /> in control—every step of the way. From the first consultation to final <br /> delivery, we focus on building solutions that align perfectly with <br /> your goals.</p>
+                    <div>
+                    <p>A simple, transparent process designed to keep you informed and in control—every step of the way. From the first consultation to final delivery, we focus on building solutions that align perfectly with your goals.</p>
+                    </div>
                     <button className='btn7'>Ask More Questions</button>
                 </div>
                 <div className='questions-content'>

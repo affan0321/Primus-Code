@@ -6,7 +6,7 @@ export default function Offer() {
         <div className='offer'>
             <div className='offer-text'>
                 <h1>How It Works</h1>
-                <p>A simple, transparent process designed to keep you informed and <br /> in control—every step of the way. From the first consultation to final <br /> delivery, we focus on building solutions that align perfectly with <br /> your goals.</p>
+                <p>A simple, transparent process designed to keep you informed and in control—every step of the way. From the first consultation to final delivery, we focus on building solutions that align perfectly with your goals.</p>
                 <img src='/Rectangle 160.png' />
             </div>
             <div className='offer-container'>
@@ -16,7 +16,9 @@ export default function Offer() {
                     </div>
                     <div>
                         <h3>Discovery & Consultation</h3>
-                        <p>We meet with you to learn about your business, your goals, and your <br /> target audience.</p>
+                        <div>
+                        <p>We meet with you to learn about your business, your goals, and your target audience.</p>
+                    </div>
                     </div>
 
                     <div>
@@ -24,7 +26,7 @@ export default function Offer() {
                     </div>
                     <div>
                         <h3>Strategy & Planning</h3>
-                        <p>Our team crafts a detailed roadmap—from design and development <br /> to deployment and marketing.</p>
+                        <p>Our team crafts a detailed roadmap—from design and development to deployment and marketing.</p>
                     </div>
 
                     <div>
@@ -32,7 +34,7 @@ export default function Offer() {
                     </div>
                     <div>
                         <h3>Design, Build & Test</h3>
-                        <p>We design user-first experiences, develop with best practices, and <br /> rigorously test for quality.</p>
+                        <p>We design user-first experiences, develop with best practices, and rigorously test for quality.</p>
                     </div>
 
                     <div>
@@ -40,7 +42,7 @@ export default function Offer() {
                     </div>
                     <div>
                         <h3>Launch & Support</h3>
-                        <p>After go-live, we provide continuous support, optimization, and <br /> improvements as your business grows.</p>
+                        <p>After go-live, we provide continuous support, optimization, and improvements as your business grows.</p>
                     </div>
                 </div>
             </div>

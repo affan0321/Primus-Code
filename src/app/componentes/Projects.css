@@ -58,6 +58,13 @@
     margin-bottom: 30px;
 }
 
+.project-paragraph{
+  /* border: 2px solid black; */
+  width: 63%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 @media (max-width: 1024px) {
   .projects-btn {
     flex-direction: column;
@@ -112,3 +119,66 @@
     width: 140px;
   }
 }
+
+/* Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .project-paragraph {
+    width: 85%;
+    margin-top: 30px;
+  }
+
+  .project-paragraph p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+/* Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .project-paragraph {
+    width: 80%;
+  }
+
+  .project-paragraph p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* Laptops: 1025px–1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .project-paragraph {
+    width: 65%;
+  }
+
+  .project-paragraph p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+/* Large Desktops: 1441px–1920px */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .project-paragraph {
+    width: 63%;
+  }
+
+  .project-paragraph p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+/* Ultra-Wide Screens: 1921px+ */
+@media (min-width: 1921px) {
+  .project-paragraph {
+    width: 55%;
+  }
+
+  .project-paragraph p {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+}
+

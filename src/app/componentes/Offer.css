@@ -13,9 +13,10 @@
     margin-bottom: 5px;
 }
 .offer-text p{
-    font-size: 12px;
+    font-size: 16px;
     color: #00000099;
     margin-bottom: 25px;
+    
 }
 .offer-text img{
     width: 500px;
@@ -37,6 +38,7 @@
 .offer-content p{
     font-size: 14px;
     color: #00000099;
+    width: 430px;
 }
 
 @media (max-width: 1024px) {
@@ -91,7 +93,8 @@
   }
 
   .offer-text p {
-    font-size: 10px;
+    font-size: 12px;
+    text-align: left;
   }
 
   .offer-content h3 {
@@ -142,6 +145,51 @@
   .offer-content img {
     width: 50px;
     height: 50px;
+  }
+}
+
+/* Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .offer-content p {
+    width: 90%;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .offer-content p {
+    width: 100%;
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+}
+
+/* Laptops: 1025px–1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .offer-content p {
+    width: 420px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+/* Large Desktops: 1441px–1920px */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .offer-content p {
+    width: 430px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+/* Ultra-Wide Screens: 1921px+ */
+@media (min-width: 1921px) {
+  .offer-content p {
+    width: 460px;
+    font-size: 15px;
+    line-height: 1.9;
   }
 }
 

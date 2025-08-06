@@ -8,7 +8,9 @@ export default function Projects() {
             <div className='projects-text'>
                 <h4>OUR WORK ACROSS INDUSTRIES</h4>
                 <h1>Crafting High-Impact Websites</h1>
-                <p>From marketing sites to complex platforms, our web development projects blend performance,<br /> responsiveness, and seamless user experience to bring your brand to life online.</p>
+                <div className='project-paragraph'>
+                <p>From marketing sites to complex platforms, our web development projects blend performance, responsiveness, and seamless user experience to bring your brand to life online.</p>
+                </div>
                 <div className='projects-btn'>
                 <div className='projects-btn-text'>
                     <p>Website Development</p>

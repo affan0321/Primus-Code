@@ -14,19 +14,19 @@ export default function Build() {
                 <form className='form'>
                     <div className="form-group">
                         <label htmlFor="name">Your Name</label>
-                        <input type="text" id="name" placeholder="       Enter your name" />
+                        <input type="text" id="name" placeholder="Enter your name" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Your Email</label>
-                        <input type="email" id="email" placeholder="        Enter your email" />
+                        <input type="email" id="email" placeholder="Enter your email" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Phone Number</label>
-                        <input type="email" id="email" placeholder="         Phone Number" />
+                        <input type="email" id="email" placeholder="Phone Number" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" placeholder="     Message"></textarea>
+                        <textarea id="message" placeholder="Message"></textarea>
                     </div>
                     <p className='btn8'>Submit</p>
                 </form>
