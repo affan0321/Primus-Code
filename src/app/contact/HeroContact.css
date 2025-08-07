@@ -1,0 +1,238 @@
+.heroContact {
+  background-image: url("/Vector (1).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.heroContact-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.heroContact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.heroContact-content span{
+    color: #25FFA9;
+}
+
+.heroContact-p{
+    width: 450px;
+}
+
+.build-form{
+    background-color: #FFFFFF;
+    width: 630px;
+    height: 500px;
+    border-radius: 12px;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.form-group label{
+    font-size: 14px;
+    color: #1C2F58FC;
+    margin-top: 20px;
+}
+.form-group input{
+    width: 573px;
+    height: 39px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #F4F5F6;
+    padding: 10px;
+}
+.form-group textarea{
+    width: 573px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #F4F5F6;
+    padding: 10px;
+}
+
+.form{
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.btn8{
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #5454E8;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.form-container{
+    position: absolute;
+    top: 350px;
+    left: 650px;
+}
+
+/* 📱 Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .heroContact {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .heroContact-container {
+    width: 95%;
+  }
+
+  .heroContact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .heroContact-p {
+    width: 100%;
+  }
+
+  .form-container {
+    position: static;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .build-form {
+    width: 95%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .btn8 {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* 📲 Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .heroContact {
+    height: auto;
+    padding: 80px 30px;
+  }
+
+  .heroContact-container {
+    width: 90%;
+  }
+
+  .heroContact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .heroContact-p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-container {
+    position: static;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .build-form {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .btn8 {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+/* 💻 Laptops: 1025px–1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .form-container {
+    top: 400px;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+
+  .build-form {
+    width: 600px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+
+/* 🖥️ Large Desktops: 1441px–1920px */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .form-container {
+    top: 350px;
+    left: 650px;
+  }
+
+  .build-form {
+    width: 630px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 573px;
+  }
+}
+
+/* 🧨 Ultra-Wide Screens: 1921px+ */
+@media (min-width: 1921px) {
+  .form-container {
+    top: 350px;
+    left: 800px;
+  }
+
+  .build-form {
+    width: 700px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 640px;
+  }
+}

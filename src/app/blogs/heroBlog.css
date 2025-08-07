@@ -1,0 +1,42 @@
+.heroBlog {
+  background-image: url("/Group 3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.heroBlog-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.heroBlog-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+
+.heroblog-text{
+    background-color: #1C2F58FC;
+    width: 600px;
+    height: 350px;
+    align-content: center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+.heroblog-textContainer{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.heroBlog p{
+    width: 430px;
+    margin-top: 10px;
+}

@@ -135,10 +135,12 @@ export default function Navbar({ variant = 'light' }) {
           <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <ul>
               <li><Link href="/about">About</Link></li>
-              <li><Link href="/projects">Projects</Link></li>
-              <li><Link href="/skills">Skills</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-              <button>Contact Us</button>
+              <li><Link href="/service">Service</Link></li>
+              <li><Link href="/skills">Our Work</Link></li>
+              <li><Link href="/blogs">Blogs</Link></li>
+              <Link href="/contact" passHref>
+                <button className="btn4">Contact Us</button>
+              </Link>
             </ul>
           </div>
         </div>

@@ -1,0 +1,103 @@
+.contacts{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contacts-container{
+    display: flex;
+    /* justify-content: center; */
+    gap: 15px;
+}
+
+.contacts-container h5{
+    color: #1C2F58FC;
+}
+.contacts-container p{
+    color: #5C5F6E;
+    margin-bottom: 10px;
+}
+
+.contacts-p{
+    width: 350px;
+}
+
+/* 📱 Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .contacts {
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contacts-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contacts-p {
+    width: 100%;
+  }
+
+  .contacts-container img {
+    width: 40px;
+  }
+
+  .contacts-container h5 {
+    font-size: 16px;
+  }
+
+  .contacts-container p {
+    font-size: 14px;
+  }
+}
+
+/* 📲 Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .contacts {
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .contacts-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .contacts-p {
+    width: 100%;
+  }
+
+  .contacts-container img {
+    width: 45px;
+  }
+}
+
+/* 💻 Laptops & Desktops: 1025px+ */
+@media (min-width: 1025px) {
+  .contacts {
+    width: 80%;
+  }
+
+  .contacts-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contacts-p {
+    width: 350px;
+  }
+
+  .contacts-container img {
+    width: 50px;
+  }
+}
