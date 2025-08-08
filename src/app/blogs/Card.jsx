@@ -1,9 +1,10 @@
-import ActionAreaCard from "./MaterialCard";
+import BootCard from "./BootCard";
+import ActionAreaCard from "./BootCard";
 
 export default function Card() {
     return (
         <div>
-            <ActionAreaCard />
+            <BootCard />
         </div>
     )
 }

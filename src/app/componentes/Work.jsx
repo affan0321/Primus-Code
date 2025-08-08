@@ -245,7 +245,7 @@ export default function Work() {
         <div className="work-card">
           <h3>Development & Implementation</h3>
           <ul>
-            <li><a href="#">Website Development</a></li>
+            <li>Website Development</li>
             <li>Mobile App Development</li>
             <li>Custom Software Development</li>
             <li>AI & Machine Learning Solutions</li>
@@ -253,7 +253,7 @@ export default function Work() {
           </ul>
         </div>
 
-        <div className="work-card">
+        <div className="work-card1">
           <h3>Consulting & Staff Augmentation</h3>
           <ul>
             <li>IT Staff Augmentation (Developers, QA, DevOps)</li>
