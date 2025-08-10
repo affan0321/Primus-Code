@@ -1,0 +1,31 @@
+.content{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.content h4{
+    color: #1C2F58FC;
+}
+
+.h4-p{
+    color: #838696;
+    font-size: 12px;
+}
+
+.content h2{
+    color: #1C2F58FC;
+}
+
+.card-containers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: #5454E8;
+}
+.card-price{
+    color: #000000;
+    font-size: bold;
+}

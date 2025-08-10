@@ -1,0 +1,28 @@
+.heroBlogInner {
+  background-image: url("/Rectangle 629.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.heroBlogInnerContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.heroBlogInnerContent {
+  height: 190px;
+  width: 550px;
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.heroBlogInnerContent h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 38px;
+}
