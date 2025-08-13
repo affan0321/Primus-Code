@@ -1,8 +1,7 @@
 import Footer from "../componentes/Footer";
 import Navbar from "../componentes/Navbar";
-import Card from "./Card";
+import Button from "./Button";
 import Cards from "./Cards";
-import CustomCard from "./CustomCard";
 import HeroBlog from "./HeroBlog";
 
 export default function Blogs() {
@@ -10,9 +9,8 @@ export default function Blogs() {
         <div>
             <Navbar variant="dark" />
             <HeroBlog />
-            {/* <Card /> */}
-            {/* <CustomCard /> */}
             <Cards />
+            <Button />
             <Footer />
         </div>
     )
