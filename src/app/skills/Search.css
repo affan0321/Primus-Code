@@ -1,0 +1,22 @@
+.btn10 {
+  width: 220px;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* controls space between text & icon */
+  padding: 8px 12px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+  color: white;
+}
+input::placeholder{
+    color: white;
+}
