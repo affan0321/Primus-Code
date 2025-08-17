@@ -1,7 +1,17 @@
-export default function SkillsInner(){
-    return(
+import Footer from "../componentes/Footer";
+import Navbar from "../componentes/Navbar";
+import Content from "./Content";
+import Details from "./Details";
+import SkillsInnerHero from "./SkillsInnerHero";
+
+export default function SkillsInner() {
+    return (
         <div>
-            <h1>hello</h1>
+            <Navbar />
+            <SkillsInnerHero />
+            <Details />
+            <Content />
+            <Footer />
         </div>
     )
 }

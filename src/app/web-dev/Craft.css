@@ -1,0 +1,29 @@
+.craft{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.craft-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.craft-container h3{
+    width: 390px;
+    color: #1C2F58FC;
+}
+
+.craft-container span{
+    color: #5454E8;
+}
+
+.craft-container p{
+    color: #666666;
+    width: 500px;
+}
+
+.craft-container-p{
+border: 2px saddlebrown;
+}

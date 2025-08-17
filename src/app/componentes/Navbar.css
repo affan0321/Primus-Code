@@ -1049,6 +1049,78 @@
 }
 
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  /* padding: 8px 12px; */
+}
+.mega-dropdown {
+  position: absolute;
+  /* top: 100%; */
+  left: 0;               /* 👈 ensures it starts from the left edge */
+  transform: translateX(-60%); /* 👈 shift it leftwards (tweak %) */
+  width: 1000px;         /* adjust width */
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 2px solid saddlebrown;
+}
+
+.dropdown-column ul li {
+  /* padding: 6px 0; */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dropdown-column ul li:hover {
+  color: #4f46e5; /* your highlight color */
+}
 
 
+.mega-dropdown {
+  
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* width: 100%; */
+  width: 1100px;
+  /* max-width: 900px; adjust as per design */
+}
+.mega-dropdown .row {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 8px;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+}
 
+.mega-dropdown .row li {
+  flex: 1; /* makes them equal size */
+  min-width: 200px; /* increase width so long text stays in one line */
+  /* text-align: center; */
+  /* padding: 10px 14px; */
+  /* border: 2px solid black; */
+  cursor: pointer;
+  white-space: nowrap; /* force text in one line */
+  transition: all 0.3s ease;
+}
+
+.mega-dropdown .row li:hover {
+  background: #f5f5f5;
+  border-radius: 6px;
+}

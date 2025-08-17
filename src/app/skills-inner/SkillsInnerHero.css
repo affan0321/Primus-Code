@@ -1,0 +1,42 @@
+.SkillsInnerHero {
+  background-image: url("/Rectangle 62.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.SkillsInnerHero-container {
+  width: 80%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.SkillsInnerHero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  color: #fff;
+  flex-direction: column;
+  width: 950px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.SkillsInnerHero-content h2{
+    font-size: 48px;
+}
+
+.SkillsInnerHero-content button{
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #5454E8;
+    color: #fff;
+    width: 240px;
+}

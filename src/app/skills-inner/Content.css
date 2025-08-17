@@ -1,0 +1,36 @@
+.content{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.content-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content-ceo{
+    background-color: #F6F6FE;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.content-ceo p{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #1C2F58FC;
+}
