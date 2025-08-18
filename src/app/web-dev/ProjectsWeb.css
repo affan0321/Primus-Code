@@ -1,0 +1,61 @@
+.projectsWeb{
+background-color: #1C2F58FC;
+margin-bottom: 50px;
+height: 1000px;
+}
+
+.projectsWeb-container h4{
+    text-align: center;
+    color: #25FFA9;
+    padding-top: 50px;
+}
+
+.projectsWeb-container h2{
+    text-align: center;
+    color: #fff;
+}
+
+.projectsWeb-container-p{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.projectsWebBtn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projectsWeb-btn button{
+background-color: #25FFA9;
+border: none;
+outline: none;
+width: 100px;
+height: 35px;
+border-radius: 10px;
+}
+
+.projectsWeb-btn1 button{
+background-color: #25FFA9;
+border: none;
+outline: none;
+width: 130px;
+height: 35px;
+border-radius: 10px;
+}
+
+.projects-Img{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

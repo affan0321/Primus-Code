@@ -1,0 +1,40 @@
+.vision{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vision-content{
+    width: 70%;
+    margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid black;
+}
+
+.circle{
+    background-color: #ECECFE;
+    width: 70px;
+    height: 70px;
+    align-content: center;
+    /* margin: 0 auto; */
+    border-radius: 50%;
+}
+
+.circle h1{
+    text-align: center;
+    color: #5454E8;
+}
+
+.vision-content p{
+    width: 190px;
+}
+
+.vision-img{
+    padding-bottom: 50px;
+}
+
+.vision-design p{
+    border: 2px solid black;
+    padding-right: 30px;
+}
