@@ -1,0 +1,25 @@
+.launch{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.launch-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.launch-container h1{
+    color: #1C2F58FC;
+    width: 500px;
+}
+
+.launch-container h1 span{
+    color: #5454E8;
+}
+
+.launch-container p{
+    color: #666666;
+}

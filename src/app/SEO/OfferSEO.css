@@ -1,0 +1,52 @@
+.offerSeo {
+  background-color: #1c2f58fc;
+  margin-top: -100px;
+  height: 900px;
+}
+
+.offerSeo h3 {
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.offerSeo-p {
+  color: #ffffff;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.offerSeo-card {
+  width: 400px;
+  height: 200px;
+  background-color: #ececfe;
+  border-radius: 12px;
+  align-content: center;
+}
+
+.offerSeo-img {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.offerSeo-content {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+
+.offerSeo-content p {
+  padding-left: 60px;
+  font-size: 15px;
+}
+
+.offerSeo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}

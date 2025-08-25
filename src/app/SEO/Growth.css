@@ -1,0 +1,74 @@
+.growth-p,
+h2 {
+  text-align: center;
+}
+
+.growth h2{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.growth {
+  margin-top: 130px;
+  margin-bottom: 30px;
+  
+  /* position: absolute; */
+  /* top: 800px; */
+  /* background-color: #fff; */
+  /* margin: 0 auto; */
+ /* z-index: 10000; */
+}
+
+.growth-p {
+  color: #5454e8;
+  margin-bottom: -10px;
+}
+
+.growth h2 {
+  color: #1c2f58fc;
+  padding-bottom: 30px;
+}
+
+.growth h2 span {
+  color: #5454e8;
+}
+
+.growth-content {
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  /* border: 2px solid black; */
+  border-radius: 12px;
+  align-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.growth-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.growth-img {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.growth-card {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 2px solid lime; */
+  height: 170px;
+}
+
+.growthCard-p {
+  color: #1c2f58fc;
+  /* text-align: right; */
+}
+
+.growth-content h4 {
+  color: #1c2f58fc;
+}

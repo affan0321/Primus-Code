@@ -1,0 +1,24 @@
+.strategy-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.strategy{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.strategy-container p{
+    color: #666666; 
+    width: 550px;
+}
+
+.strategy-container h3{
+    color: #1C2F58FC;
+}
+
+span{
+    color: #5454E8;
+}

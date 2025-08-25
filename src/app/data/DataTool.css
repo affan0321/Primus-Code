@@ -1,0 +1,30 @@
+.tool {
+  background-color: #1c2f58fc;
+  height: 520px;
+  margin-bottom: 360px;
+}
+
+.tool-container h2 {
+    padding-top: 50px;
+  text-align: center;
+  width: 450px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.tool-container p {
+  color: #ffffff;
+  width: 850px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tool-container span {
+  color: #25ffa9;
+}
+
+.tool-img img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}

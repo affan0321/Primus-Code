@@ -1,0 +1,30 @@
+.performance{
+    background-image: url("/Rectangle 634.png");
+}
+
+.performance-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.performance-container h1{
+    width: 500px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.performance-container h1 span{
+    color: #25FFA9;
+}
+
+.performance-container p{
+    color: #fff;
+    width: 600px;
+}
+
+.performance-container img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

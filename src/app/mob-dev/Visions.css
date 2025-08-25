@@ -1,0 +1,26 @@
+.visions{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.visions-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.visions-container p{
+    width: 600px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.visions-container h3{
+    color: #1C2F58FC;
+}
+
+.visions-container span{
+    color: #5454E8;
+}
