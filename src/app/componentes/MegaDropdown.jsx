@@ -34,7 +34,7 @@ export default function MegaDropdown() {
 
                         <div className={styles.column}>
                             <img src="/Group(13).png" width={170}  />
-                            <Link href="/it">IT Staff Augmentation</Link>
+                            <Link href="/IT">IT Staff Augmentation</Link>
                             <Link href="UI">UI/UX Design & Product Strategy</Link>
                             <Link href="digital">Digital Transformation Consultation</Link>
                         </div>
@@ -47,7 +47,7 @@ export default function MegaDropdown() {
                         </div>
                         <div className={styles.column}>
                             <img src="/Group(15).png" width={98}/>
-                            <Link href="/seo">SEO & Analysis</Link>
+                            <Link href="/SEO">SEO & Analysis</Link>
                             <Link href="paid-marketing">Paid Marketing</Link>
                         </div>
                     </div>

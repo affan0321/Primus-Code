@@ -32,6 +32,7 @@
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.4s ease;
+  color: black;
 }
 
 .dropdownContent.open {
@@ -82,6 +83,7 @@
   display: block;
   padding: 8px 0;
   color: black;
+  /* border: 2px solid black; */
   text-decoration: none;
   font-size: 13px;
 }
@@ -93,40 +95,6 @@
 /* ✅ Already existing styles remain untouched */
 
 /* ---------- Responsive Styles ---------- */
-
-/* ✅ Mobile (up to 600px) */
-@media screen and (max-width: 600px) {
-  .dropdownContent {
-    position: static; /* makes it flow under the button */
-    width: 100%;
-    right: 0;
-    top: auto;
-    max-height: 70vh; /* limit dropdown height */
-    overflow-y: auto; /* scroll only when needed */
-    scrollbar-width: thin; /* Firefox */
-  }
-
-  .row {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .column {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .column img {
-    margin: 0 auto 10px;
-    display: block;
-  }
-
-  .column a {
-    display: block;
-    padding: 10px 0;
-  }
-}
 
 /* ✅ Tablet (601px - 991px) */
 @media screen and (max-width: 991px) and (min-width: 601px) {
@@ -159,3 +127,54 @@
     padding: 8px 0;
   }
 }
+
+
+/* Make sure body allows scrolling */
+body {
+     /* only block horizontal scroll */
+  overflow-y: auto;     /* allow vertical scroll */
+}
+
+/* Mobile dropdown fix */
+@media screen and (max-width: 600px) {
+  .dropdownContent {
+    position:static;
+    width: 100%;
+    right: 0;
+    top: auto;
+
+    max-height: 70vh !important;        /* fit dropdown in viewport */
+    overflow-y: auto;        /* enable scroll inside */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling */
+
+    background: white;       /* keep background visible */
+    z-index: 9999;      
+
+  }
+
+  .dropdown, .nav, .row {
+  overflow: visible !important;
+}
+
+  .row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .column img {
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .column a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
