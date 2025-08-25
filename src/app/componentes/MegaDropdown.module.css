@@ -128,13 +128,6 @@
   }
 }
 
-
-/* Make sure body allows scrolling */
-body {
-     /* only block horizontal scroll */
-  overflow-y: auto;     /* allow vertical scroll */
-}
-
 /* Mobile dropdown fix */
 @media screen and (max-width: 600px) {
   .dropdownContent {
