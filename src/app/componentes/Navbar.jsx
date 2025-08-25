@@ -218,6 +218,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
+import MegaDropdown from "./MegaDropdown";
 
 export default function Navbar({ variant = "light" }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -247,6 +248,14 @@ export default function Navbar({ variant = "light" }) {
     }
   }, [menuOpen]);
 
+  useEffect(() => {
+  const timer = setTimeout(() => {
+    document.querySelector(".navbar")?.classList.add("visible");
+  }, 100);
+  return () => clearTimeout(timer);
+}, []);
+
+
   return (
     <div className="header">
       <div
@@ -272,8 +281,10 @@ export default function Navbar({ variant = "light" }) {
                 <Link href="/about">About Us</Link>
               </li>
 
+              <li><MegaDropdown /></li>
+
               {/* Services Dropdown */}
-              <li
+              {/* <li
                 className="dropdown"
                 // onMouseEnter={() => setServicesOpen(true)}
                 // onMouseOut={() => setServicesOpen(false)}
@@ -315,8 +326,7 @@ export default function Navbar({ variant = "light" }) {
                   </div>
 
                 )}
-              </li>
-
+              </li> */}
 
               <li>
                 <Link href="/skills">Our Work</Link>
