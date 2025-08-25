@@ -1,0 +1,29 @@
+.software{
+    width: 80%;
+    margin: 0 auto;
+}
+.software-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.software{
+    margin-top: 50px;
+}
+
+.software-container h3{
+    width: 400px;
+    color: #1C2F58FC;
+}
+
+.software-container span{
+    color: #5454E8;
+}
+
+.software-container p{
+    font-size: 14px;
+    width: 500px;
+}

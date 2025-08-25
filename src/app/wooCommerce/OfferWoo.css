@@ -1,0 +1,101 @@
+.offersShopify{
+    background-color: #F6F6FE;
+}
+.offerShopify{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.shopify-box{
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+    align-content: center;
+    background-color: #fff;
+}
+
+.shopify-box:hover{
+    border: 1px solid lightgrey;
+}
+
+.box-containers{
+    width: 70%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.shopify-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    flex-wrap: wrap;
+    /* gap: 5px; */
+}
+
+
+.box-container-big{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box-container-big p{
+    padding-left: 10px;
+}
+
+.box-containers p{
+    padding-left: 10px;
+}
+
+.shopify-box-big{
+    width: 700px;
+    height: 200px;
+    border-radius: 12px;
+    align-content: center;
+    margin-top: 30px;
+    background-color: #fff;
+}
+.shopify-box-big:hover{
+    border: 1px solid lightgrey;
+}
+
+.shopify-box-small:hover{
+    border: 1px solid lightgrey;
+}
+
+
+
+.shopify-box-small{
+    width: 350px;
+    height: 200px;
+    border-radius: 12px;
+    align-content: center;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.box-container-small{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box-container-big p{
+    padding-left: 12px;
+}
+.box-container-small p{
+    padding-left: 10px;
+}
+
+.offerShopify h3{
+    margin-top: 50px;
+    color: #1C2F58FC;
+}
+
+h3 span{
+    color: #5454E8;
+}
+
+h4{
+    color: #1C2F58FC;
+}
