@@ -214,7 +214,7 @@
 
 
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
@@ -222,6 +222,22 @@ import Link from "next/link";
 export default function Navbar({ variant = "light" }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setServicesOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
 
   useEffect(() => {
     if (menuOpen) {
@@ -259,36 +275,42 @@ export default function Navbar({ variant = "light" }) {
               {/* Services Dropdown */}
               <li
                 className="dropdown"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
+                // onMouseEnter={() => setServicesOpen(true)}
+                // onMouseOut={() => setServicesOpen(false)}
+                ref={dropdownRef}
+                onClick={() => setServicesOpen((prev) => !prev)}
               >
                 <span className="dropdown-toggle">Service</span>
                 {servicesOpen && (
                   <div class="mega-dropdown">
                     <ul class="row">
+                      <img src="/Frames(13).png" width={50}  />
                       <li>
                         <Link href="/web-dev">Website Development</Link>
-                        </li>
-                      <li>Mobile Development</li>
-                      <li>Custom Software Development</li>
-                      <li>AI & Machine Learning Solution</li>
-                      <li>Data & Analytics</li>
+                      </li>
+                      <li><Link href="/mob-dev">Mobile Development</Link></li>
+                      <li><Link href="/software-dev">Custom Software Development</Link></li>
+                      <li><Link href="/AI">AI & Machine Learning</Link></li>
+                      <li><Link href="/data">Data & Analytics</Link></li>
                     </ul>
 
-                    <ul class="row">
-                      <li>IT Staff Augmentation</li>
-                      <li>UI/UX Design & Product Strategy</li>
-                      <li>Digital Transformation Consultation</li>
+                    <ul style={{ height: "40px" }} class="row">
+                      <img src="/Group(13).png" width={50}  />
+                      <li><Link href="IT">IT Staff Augmentation</Link></li>
+                      <li><Link href="UI">UI/UX Design & Product Strategy</Link></li>
+                      <li><Link href="digital">Digital Transformation Consultation</Link></li>
                     </ul>
 
-                    <ul class="row">
-                      <li>Shopify Development</li>
-                      <li>WooCommerce Development</li>
-                      <li>Store Migration & Platform Integration</li>
+                    <ul style={{ height: "40px" }} class="row">
+                      <img src="/Group (14).png" width={100} height={142}  />
+                      <li><Link href="shopify">Shopify Development</Link></li>
+                      <li><Link href="wooCommerce">WooCommerce Development</Link></li>
+                      <li><Link href="store">Store Migration & Platform Integration</Link></li>
                     </ul>
-                    <ul class="row">
-                      <li>SEO & Analysis</li>
-                      <li>Paid Marketing</li>
+                    <ul style={{ height: "40px" }} class="row">
+                      <img style={{border:"2px solid black"}} src="/Group(15).png" width={100} height={140} />
+                      <li><Link href="SEO">SEO & Analysis</Link></li>
+                      <li><Link href="paid-marketing">Paid Marketing</Link></li>
                     </ul>
                   </div>
 

@@ -1,0 +1,24 @@
+.buisness{
+    width: 80%;
+    margin: 0 auto;
+}
+.buisness-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.buisness-container p{
+    width: 500px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.buisness-container h3{
+    color: #1C2F58FC;
+}
+
+.buisness-container span{
+    color: #5454E8;
+}
