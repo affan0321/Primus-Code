@@ -31,7 +31,7 @@
     margin-bottom: 30px;
 }
 
-.projects-btn-text{
+.projects-btn-text button{
     width: 300px;
     height: 40px;
     border: none;
@@ -39,16 +39,21 @@
     background-color: #25FFA9;
     border-radius: 10px;
     color: #1C2F58FC;
-    text-align: center;
-    margin-top: 20px;
-    align-content: center;
+  
+    
 }
 
-.projects-btn-text p{
+.projects-btn-text .btn24{
+   width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #25FFA9;
+    border-radius: 10px;
     color: #1C2F58FC;
-    font-size: 13px;
-    font-weight: 600;
+    /* border: 2px solid black; */
 }
+
 
 .projects-img{
     display: flex;
@@ -183,3 +188,55 @@
   }
 }
 
+
+
+/* Highlight active button */
+.projects-btn-text button.active {
+  background-color: #1c2f58fc;
+  color: #25ffa9;
+  border: 2px solid #25ffa9;
+}
+.projects-btn-text .btn24.active {
+  background-color: #1c2f58fc;
+  color: #25ffa9;
+  border: 2px solid #25ffa9;
+}
+
+
+/* Optional: Smooth fade effect for images */
+.projects-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 80px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-img img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.projects-img img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+/* Fade + slight upward slide */
+.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -55,12 +55,14 @@
 }
 
 .testimonial-card {
-  width: 500px;
+  width: 600px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height: 250px;
   align-content: center;
+  /* border: 2px solid black ; */
+  /* color: #5454E8; */
 }
 
 .testimonial-card:hover{
@@ -92,6 +94,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* color: #5454E8; */
 }
 
 .name-title h3 {
@@ -102,8 +105,8 @@
 .name-title .title {
   font-size: 14px;
   color: #777;
-
 }
+
 
 .testimonial-content {
   margin-top: 15px;
@@ -250,3 +253,18 @@
     font-size: 13px;
   }
 }
+
+/* When card is hovered */
+.testimonial-card:hover {
+  background-color: #5454E8;
+  color: #fff; /* fallback for anything inheriting color */
+  border: 2px solid #5454E8;
+}
+
+/* Force all child text to turn white */
+.testimonial-card:hover h3,
+.testimonial-card:hover .title,
+.testimonial-card:hover .testimonial-content {
+  color: #fff !important;
+}
+

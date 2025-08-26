@@ -34,6 +34,8 @@
     background-color:#5454E8;
     color: #fff;
     margin: 0 auto;
+    /* height: 0px; */
+    /* border: 2px solid black; */
     /* align-content: center; */
 }
 .footer-bottom-text{
@@ -44,7 +46,8 @@
     align-items: center;
     align-content: center;
     margin: 0 auto;
-    height: 50px;
+    height: 70px;
+    /* border: 2px solid black; */
 }
 .footer-bottom-links{
     display: flex;

@@ -3,15 +3,18 @@
     margin-top: 50px;
     display: flex;
     width: 100%;
+    /* border: 2px solid black; */
 }
 .build-header{
     background-color: #F6F6FE;
-    width: 600px;
-    margin: 0 auto;
+    width: 700px;
+    /* margin: 0 auto; */
+    /* border: 2px solid black; */
 }
 .build-header-text{
     margin: 0 auto;
     width: 80%;
+    /* border: 2px solid black; */
     /* margin-top: 40px; */
 }
 .build-header-text img{
@@ -35,6 +38,8 @@
     background-color: #FFFFFF;
     width: 630px;
     height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
 }
 .form-group{

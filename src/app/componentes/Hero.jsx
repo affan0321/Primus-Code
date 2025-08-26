@@ -40,11 +40,24 @@ export default function Home() {
                 <div className="v-line" style={{ left: "40%", animationDelay: "2s" }} />
                 <div className="v-line" style={{ left: "60%", animationDelay: "4s" }} />
                 <div className="v-line" style={{ left: "80%", animationDelay: "6s" }} />
+                <div className="v-line" style={{ left: "80%", animationDelay: "8s" }} />
+                <div className="v-line" style={{ left: "80%", animationDelay: "10s" }} />
+                <div className="v-line" style={{ left: "80%", animationDelay: "12s" }} />
+                <div className="v-line" style={{ left: "80%", animationDelay: "14s" }} />
+                <div className="v-line" style={{ left: "80%", animationDelay: "16s" }} />
+                <div className="v-line" style={{ left: "80%", animationDelay: "18 s" }} />
 
                 {/* Horizontal lines */}
                 <div className="h-line" style={{ top: "30%", animationDelay: "1s" }} />
                 <div className="h-line" style={{ top: "50%", animationDelay: "3s" }} />
                 <div className="h-line" style={{ top: "70%", animationDelay: "5s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "7s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "9s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "11s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "13s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "15s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "17s" }} />
+                <div className="h-line" style={{ top: "70%", animationDelay: "19s" }} />
             </div>
 
 
