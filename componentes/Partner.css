@@ -1,0 +1,148 @@
+.partner{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.partner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 603px;
+    height: 362px;
+    
+}
+.partner-content{
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.partner.reverse {
+  flex-direction: row-reverse;
+}
+.partner-content h1{
+    font-size: 60px;
+    color: #1C2F58FC;
+    font-weight: 500;    
+}
+.partner-text{
+    width: 700px;
+}
+.partner-text p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.partner-text h2{
+    font-size: 30px;
+    color: #1C2F58FC;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.partner-text h2 span{
+    color: #5454E8;
+}
+.btn3{
+    border: none;
+    outline: none;
+    color: #5454E8;
+    background: transparent;
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .partner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .partner.reverse {
+  flex-direction: column !important;
+}
+
+
+  .partner-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .partner-content {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .partner-text {
+    width: 100%;
+  }
+
+  .partner-text h2 {
+    font-size: 26px;
+  }
+
+  .partner-text p {
+    font-size: 14px;
+  }
+}
+
+/* Small Tablets and Large Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .partner-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .partner-content h1 {
+    font-size: 38px;
+  }
+
+
+  .partner-text h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .partner-text p {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .btn3 {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .partner {
+    padding: 20px 10px;
+  }
+
+  .partner-content h1 {
+    font-size: 30px;
+  }
+
+  .partner-text h2 {
+    font-size: 20px;
+  }
+
+  .partner-text p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .btn3 {
+    font-size: 13px;
+  }
+}

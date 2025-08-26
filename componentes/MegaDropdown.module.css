@@ -1,0 +1,173 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden until state is true) */
+.dropdownContent {
+  position: absolute;
+  /* background-color: #f9f9f9; */
+   background-color: #fff;
+  width: 900%;
+  right: -400px;
+  top: 160%;
+  z-index: 999;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+   max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+  color: black;
+}
+
+.dropdownContent.open {
+  max-height: 1000px; /* large enough to fit content */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When closed */
+.dropdownContent.closed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+.dropdownContent.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Header inside dropdown */
+.header {
+  /* background: #f1f1f1; */
+  padding: 16px;
+  color: black;
+}
+
+/* Create three equal columns inside dropdown */
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.column h3 {
+  margin-bottom: 16px;
+}
+
+.column a {
+  display: block;
+  padding: 8px 0;
+  color: black;
+  /* border: 2px solid black; */
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* ✅ Already existing styles remain untouched */
+
+/* ---------- Responsive Styles ---------- */
+
+/* ✅ Tablet (601px - 991px) */
+@media screen and (max-width: 991px) and (min-width: 601px) {
+  .dropdownContent {
+    position: static;
+    width: 100%;
+    right: 0;
+    top: auto;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .column {
+    width: 45%; /* two columns side by side */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .column img {
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .column a {
+    display: block;
+    padding: 8px 0;
+  }
+}
+
+/* Mobile dropdown fix */
+@media screen and (max-width: 600px) {
+  .dropdownContent {
+    position:static;
+    width: 100%;
+    right: 0;
+    top: auto;
+
+    max-height: 70vh !important;        /* fit dropdown in viewport */
+    overflow-y: auto;        /* enable scroll inside */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling */
+
+    background: white;       /* keep background visible */
+    z-index: 9999;      
+
+  }
+
+  .dropdown, .nav, .row {
+  overflow: visible !important;
+}
+
+  .row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .column img {
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .column a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
