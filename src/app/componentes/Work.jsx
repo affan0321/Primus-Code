@@ -223,13 +223,34 @@
 //   );
 // }
 
-
+"use client"
 import React from 'react';
 import './Work.css';
+import { useRef,useEffect } from 'react';
 
 export default function Work() {
+   const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target); // Animate once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const elements = sectionRef.current.querySelectorAll('.work-card, .work-card1');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   return (
-    <div className="work">
+    <div className="work"ref={sectionRef}>
       <div className="work-text">
         <h2>
           What We Do <span>Best</span>

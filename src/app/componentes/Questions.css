@@ -140,3 +140,61 @@
     line-height: 1.9;
   }
 }
+
+
+/* Initial hidden state */
+.questions-text,
+.questions-content {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* Animate on scroll */
+.animate-questions .questions-text {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-questions .questions-content {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInRight 0.8s ease-out forwards 0.2s;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.MuiAccordionDetails-root {
+  animation: fadeInAccordion 0.3s ease-out;
+}
+
+@keyframes fadeInAccordion {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

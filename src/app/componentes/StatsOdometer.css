@@ -1,4 +1,4 @@
-.stats-section {
+/* .stats-section {
   width: 80%;
   margin: 0 auto;
   background: #fff;
@@ -75,10 +75,228 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .stats-container {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+
+.stats-section {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 64px;
+  font-weight: 500;
+  color: #1e2a47;
+  line-height: 1;
+}
+
+.stat-value span {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.stat-label {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #6b7280;
+  width: 170px;
+}
+
+.stats-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e2a47;
+  line-height: 1.3;
+}
+
+.stats-content h2 span {
+  color: #4f46e5;
+}
+
+.stats-content p {
+  margin-top: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .stat-value {
+    font-size: 52px;
+  }
+
+  .stat-value span {
+    font-size: 28px;
+  }
+
+  .stats-content h2 {
+    font-size: 28px;
+  }
+}
+
+/* ✅ Large Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .stat-value {
+    font-size: 44px;
+  }
+
+  .stat-value span {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .stats-content h2 {
+    font-size: 24px;
+  }
+
+  .stats-content p {
+    font-size: 14px;
+  }
+}
+
+/* ✅ Small Mobile (≤ 400px) */
+@media (max-width: 400px) {
+  .stats-section {
+    width: 95%;
+    padding: 40px 15px;
+  }
+
+  .stat-value {
+    font-size: 36px;
+  }
+
+  .stat-value span {
+    font-size: 20px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+
+  .stats-content h2 {
+    font-size: 20px;
+  }
+
+  .stats-content p {
+    font-size: 13px;
+  }
+
+  .learn-more {
+    font-size: 14px;
+  }
+}
+
+/* Initial hidden state */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+/* Visible state when scrolled into view */
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ✅ Large Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .stats-container {
+    text-align: center;
+    justify-items: center; /* centers grid items */
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center; /* ensures each stat box is centered */
+  }
+
+  .stat-box {
+    align-items: center; /* center text inside each stat */
+  }
+
+  .stat-label {
+    text-align: center;
+    width: auto;
+  }
+
+  .stats-content {
+    text-align: left;
   }
 }

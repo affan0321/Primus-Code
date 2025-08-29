@@ -1,11 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Link from "next/link";
 import styles from "./MegaDropdown.module.css";
 
 export default function MegaDropdown() {
     const [open, setOpen] = useState(false);
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        // Detect if navbar has dark class
+        const navbar = document.querySelector(".navbar");
+        if (navbar) {
+            const observer = new MutationObserver(() => {
+                setIsDark(navbar.classList.contains("dark-navbar"));
+            });
+            observer.observe(navbar, { attributes: true, attributeFilter: ["class"] });
+            return () => observer.disconnect();
+        }
+    }, []);
 
     return (
         <div className={styles.dropdown}>
@@ -13,7 +26,12 @@ export default function MegaDropdown() {
                 className={styles.dropbtn}
                 onClick={() => setOpen(!open)}
             >
-                Services <img src="/chevron-down.png" alt="" />
+                Services{" "}
+                {/* <img src="/chevron-down.png" alt="" /> */}
+                <img
+                    src={isDark ? "/chevron-downs.png" : "/chevron-down.png"}
+                    alt="dropdown icon"
+                />
             </li>
 
             {open && (
@@ -33,20 +51,20 @@ export default function MegaDropdown() {
                         </div>
 
                         <div className={styles.column}>
-                            <img src="/Group(13).png" width={170}  />
+                            <img src="/Group(13).png" width={170} />
                             <Link href="/IT">IT Staff Augmentation</Link>
                             <Link href="UI">UI/UX Design & Product Strategy</Link>
                             <Link href="digital">Digital Transformation Consultation</Link>
                         </div>
 
                         <div className={styles.column}>
-                            <img src="/Group (14).png" width={109}/>
+                            <img src="/Group (14).png" width={109} />
                             <Link href="/shopify">Shopify Development</Link>
                             <Link href="/wooCommerce">WooCommerce Development</Link>
                             <Link href="store">Store Migration & Platform Integration</Link>
                         </div>
                         <div className={styles.column}>
-                            <img src="/Group(15).png" width={98}/>
+                            <img src="/Group(15).png" width={98} />
                             <Link href="/SEO">SEO & Analysis</Link>
                             <Link href="paid-marketing">Paid Marketing</Link>
                         </div>

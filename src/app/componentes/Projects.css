@@ -240,3 +240,70 @@
     transform: translateY(0) scale(1);
   }
 }
+
+
+/* ✅ Tablet (≤ 1024px) */
+@media (max-width: 1024px) {
+  .projects-btn-text .btn24 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+/* ✅ Large Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .projects-btn-text .btn24 {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 6px 10px;
+  }
+}
+
+/* ✅ Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .projects-btn-text .btn24 {
+    width: 98%;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 6px 8px;
+  }
+}
+
+/* Initial hidden state */
+.projects {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.projects.animate-projects {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered child animations */
+.projects.animate-projects h4 {
+  animation: fadeSlideUp 0.6s ease-out forwards 0.1s;
+}
+.projects.animate-projects h1 {
+  animation: fadeSlideUp 0.6s ease-out forwards 0.3s;
+}
+.projects.animate-projects .project-paragraph {
+  animation: fadeSlideUp 0.6s ease-out forwards 0.5s;
+}
+.projects.animate-projects .projects-btn {
+  animation: fadeSlideUp 0.6s ease-out forwards 0.7s;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

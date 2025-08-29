@@ -183,6 +183,7 @@ import './TestimonialSlider.css';
 
 const TestimonialSlider = () => {
   const sliderRef = useRef(null);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
   const goNext = () => sliderRef.current?.slickNext();
   const goPrev = () => sliderRef.current?.slickPrev();
@@ -211,8 +212,8 @@ const TestimonialSlider = () => {
         <div className="testimonial-header">
           <h2>What Our Client Said About Us</h2>
           <div className="testimonial-arrows">
-            <button onClick={goPrev}>&#8592;</button>
-            <button onClick={goNext}>&#8594;</button>
+            <button onClick={goPrev}><img src="right arrow.png" width={20} /></button>
+            <button onClick={goNext}><img src="left arrow.png" width={20} /></button>
           </div>
         </div>
 

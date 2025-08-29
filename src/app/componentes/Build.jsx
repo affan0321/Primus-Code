@@ -1,14 +1,33 @@
+"use client";
 import './Build.css';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 export default function Build() {
-    return(
-        <div className="build-container">
+    const buildRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-build');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        if (buildRef.current) observer.observe(buildRef.current);
+        return () => observer.disconnect();
+    }, []);
+    return (
+        <div className="build-container" ref={buildRef}>
             <div className="build-header">
-            <div className='build-header-text'>
-                <h3 style={{marginTop:"40px"}}>Build Something Brilliant <span>Together</span></h3>
-                <p>Have an idea, project, or question? We’d love to hear from you. Reach out and our team <br /> will get back to you within 24 hours.</p>
-                <img src="/Group1.png" alt="" />
-            </div>
+                <div className='build-header-text'>
+                    <h3 style={{ marginTop: "40px" }}>Build Something Brilliant <span>Together</span></h3>
+                    <p>Have an idea, project, or question? We’d love to hear from you. Reach out and our team <br /> will get back to you within 24 hours.</p>
+                    <img src="/Group1.png" alt="" />
+                </div>
             </div>
             <div className="build-form">
                 <form className='form'>
@@ -30,7 +49,7 @@ export default function Build() {
                     </div>
                     <p className='btn8'>Submit</p>
                 </form>
-        </div>
+            </div>
         </div>
     )
 }

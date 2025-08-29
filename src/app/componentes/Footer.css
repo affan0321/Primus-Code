@@ -108,6 +108,59 @@
     align-items: center;
   }
 }
+
+
+/* Initial hidden state */
+.footer {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.footer-logo-area,
+.footer-links > div,
+.footer-bottom-text > div {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* When triggered */
+.animate-footer {
+  animation: footerFadeUp 0.8s ease-out forwards;
+}
+
+.animate-footer .footer-logo-area {
+  animation: fadeUp 0.6s ease-out forwards 0.2s;
+}
+
+.animate-footer .footer-links > div:nth-child(1) {
+  animation: fadeUp 0.6s ease-out forwards 0.4s;
+}
+
+.animate-footer .footer-links > div:nth-child(2) {
+  animation: fadeUp 0.6s ease-out forwards 0.55s;
+}
+
+.animate-footer ~ .footer-bottom .footer-bottom-text > div:nth-child(1) {
+  animation: fadeUp 0.6s ease-out forwards 0.7s;
+}
+
+.animate-footer ~ .footer-bottom .footer-bottom-text > div:nth-child(2) {
+  animation: fadeUp 0.6s ease-out forwards 0.85s;
+}
+
+/* Keyframes */
+@keyframes footerFadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
 /* 
 
 @media (min-width: 481px) and (max-width: 1024px) {

@@ -1,9 +1,31 @@
-import React from 'react';
+"use client";
+import React, { useRef, useEffect } from 'react';
 import './Questions.css';
 import AccordionTransition from './Accordion';
 export default function Questions() {
+    const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-questions');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
     return (
-        <div className='questions'>
+        <div className='questions'ref={containerRef}>
             <div className='questions-container'>
                 <div className='questions-text'>
                     <h2>Frequently Asked Questions</h2>

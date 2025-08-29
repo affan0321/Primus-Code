@@ -320,6 +320,7 @@
     align-items: center;
     z-index: 999;
     transition: all 0.3s ease-in-out;
+    /* border: 2px solid black; */
   }
 
   .nav-links.open {
@@ -331,6 +332,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    /* border: 2px solid black; */
   }
 
   .nav-links ul li {
@@ -544,5 +546,24 @@
 @keyframes navDrop {
   to { transform: translateY(0); }
 }
+
+/* Default hamburger */
+.hamburger {
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+/* Dark variant - white background */
+.dark-hamburger {
+  background: white;
+  color: black; /* ensures icon is visible */
+}
+
 
 

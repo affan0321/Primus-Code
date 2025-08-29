@@ -44,12 +44,13 @@
 
 
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Projects.css";
 
 export default function Projects() {
     // Track which category is active
     const [activeCategory, setActiveCategory] = useState("website");
+     const sectionRef = useRef(null);
 
     // Image data for each category
     const images = {
@@ -58,8 +59,26 @@ export default function Projects() {
         software: ["/Img1.png", "/img2.png", "/img3.png", "/img4.png"],
     };
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-projects");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        if (sectionRef.current) observer.observe(sectionRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <div className="projects">
+        <div className="projects" ref={sectionRef}>
             <div className="projects-text">
                 <h4>OUR WORK ACROSS INDUSTRIES</h4>
                 <h1>Crafting High-Impact Websites</h1>
@@ -98,15 +117,6 @@ export default function Projects() {
                         </button>
                     </div>
                 </div>
-
-                {/* Images */}
-                {/* <div className="projects-img">
-                    {images[activeCategory].map((src, index) => (
-                        <div key={index}>
-                            <img src={src} width={250} alt="project" />
-                        </div>
-                    ))}
-                </div> */}
 
                 <div className="projects-img">
                     {images[activeCategory].map((src, index) => (

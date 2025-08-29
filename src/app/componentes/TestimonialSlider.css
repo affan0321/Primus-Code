@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 40px 0;
   margin-top: 30px;
-  
+  color: #5454E8;
 }
 
 .testimonial-header {
@@ -254,17 +254,35 @@
   }
 }
 
-/* When card is hovered */
-.testimonial-card:hover {
-  background-color: #5454E8;
-  color: #fff; /* fallback for anything inheriting color */
-  border: 2px solid #5454E8;
+/* Default button style */
+.testimonial-arrows button {
+  font-size: 22px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Force all child text to turn white */
-.testimonial-card:hover h3,
-.testimonial-card:hover .title,
-.testimonial-card:hover .testimonial-content {
-  color: #fff !important;
+/* Hover state */
+.testimonial-arrows button:hover {
+  background-color: #5454E8;
+}
+
+/* Change the image on hover */
+.testimonial-arrows button img {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Example for first button (Prev) */
+.testimonial-arrows button.prev:hover img {
+  content: url("/righ arrow (2).png"); /* replace with your hover image */
+}
+
+/* Example for second button (Next) */
+.testimonial-arrows button.next:hover img {
+  content: url("/right arrow (1).png"); /* replace with your hover image */
 }
 

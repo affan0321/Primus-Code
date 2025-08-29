@@ -1,9 +1,29 @@
-import React from 'react';
+"use client";
+import React, { useRef, useEffect } from 'react';
 import './Footer.css';
 export default function Footer() {
+     const footerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-footer');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    if (footerRef.current) observer.observe(footerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
     return(
         <>
-        <div className='footer'>
+        <div className='footer'ref={footerRef}>
             <div className='footer-content'>
             <div>
                 <img src="/Logo-04.png" width={100} />

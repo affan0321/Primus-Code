@@ -1,8 +1,30 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useRef } from 'react';
 import './Banner.css';
 export default function Banner() {
-    return(
-        <div className="banner">
+    const bannerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target); // run once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (bannerRef.current) {
+      observer.observe(bannerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+    return(   
+        <div className="banner" ref={bannerRef}>
             <div className='banner-container'>
             <div className='banner-content'>
                 <h1>Have A Project In Mind? Let's Bring It To Life</h1>

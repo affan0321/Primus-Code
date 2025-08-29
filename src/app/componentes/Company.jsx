@@ -1,8 +1,32 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useRef } from 'react';
 import './Company.css';
 export default function Company() {
+    const companyRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationDelay = `${index * 0.15}s`;
+            entry.target.classList.add("animate-company");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    if (companyRef.current) {
+      const items = companyRef.current.querySelectorAll(".company > div");
+      items.forEach((item) => observer.observe(item));
+    }
+
+    return () => observer.disconnect();
+  }, []);
     return(
-        <div className='company'>
+        <div className='company'ref={companyRef}>
             <div className='img-container'>
                 <div className='img-text'>
                 <h3>REX Inc</h3>
