@@ -212,8 +212,19 @@ const TestimonialSlider = () => {
         <div className="testimonial-header">
           <h2>What Our Client Said About Us</h2>
           <div className="testimonial-arrows">
-            <button onClick={goPrev}><img src="right arrow.png" width={20} /></button>
-            <button onClick={goNext}><img src="left arrow.png" width={20} /></button>
+            {/* <button onClick={goPrev}><img src="right arrow.png" width={20} /></button>
+            <button onClick={goNext}><img src="left arrow.png" width={20} /></button> */}
+
+            <button className="prev" onClick={goPrev}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button className="next" onClick={goNext}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -223,7 +234,9 @@ const TestimonialSlider = () => {
             <div className="testimonial-card">
               <div className="testimonial-inner">
                 <div className="top-section">
-                  <img src="/Ellipse 80.png" alt="Amelia Joseph" />
+                  <div>
+                    <img src="/Ellipse 80.png" alt="Amelia Joseph" width={970} />
+                  </div>
                   <div className="name-title">
                     <h3>Amelia Joseph</h3>
                     <p className="title">Chief Manager</p>

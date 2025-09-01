@@ -258,6 +258,8 @@
   width: 80%;
   margin: 0 auto;
   font-family: 'Segoe UI', sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px !important;
 }
 
 .work-text h2 {
@@ -283,12 +285,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  align-content: center;
+  margin-bottom: 50px;
 }
 
 .work-container > .work-card {
   width: 500px;
-  height: 250px;
+  height: 270px;
   margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid black; */
+  /* align-content: center; */
 }
 
 .work-card{
@@ -365,8 +372,11 @@
 
 .work-container > .work-card1 {
   width: 500px;
-  height: 250px;
+  height: 270px;
   margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* border: 2px solid black; */
 }
 
 .work-card1{
@@ -434,9 +444,10 @@
 
 /* Bottom cards with custom widths */
 .work-card.wide {
-  width: 620px;
+  width: 620px !important;
   height: 180px;
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid black; */
 }
 
 .work-card.wide:hover{
@@ -464,8 +475,10 @@
 }
 
 .work-card.narrow {
-  width: 362.5px;
+  width: 390px !important;
   height: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid black; */
 }
 
 .work-card.narrow:hover{
@@ -481,6 +494,8 @@
   background-image: url("/Ellipse 22.png");
   background-repeat: no-repeat;
   background-position: bottom right;
+  /* border: 2px solid black; */
+
 }
 .work-card.narrow h3{
   font-size: 25px;

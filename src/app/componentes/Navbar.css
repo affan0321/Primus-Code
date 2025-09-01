@@ -8,6 +8,7 @@
 
 /* ✅ Navbar container */
 .navbar {
+  position:fixed !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -563,6 +564,11 @@
 .dark-hamburger {
   background: white;
   color: black; /* ensures icon is visible */
+}
+
+.navbar {
+  /* background-color: #fff; or #0b2447 for dark */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* optional shadow */
 }
 
 
