@@ -300,3 +300,51 @@
     text-align: left;
   }
 }
+
+/* ✅ Full HD (1920px screens only) */
+@media (min-width: 1920px) {
+  .stats-section {
+    width: 80%;
+    padding-top: 70px;
+  }
+
+  .stats-container {
+    max-width: 1600px;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .stat-value {
+    font-size: 80px;
+  }
+
+  .stat-value span {
+    font-size: 42px;
+  }
+
+  .stat-label {
+    font-size: 18px;
+    width: 200px;
+  }
+
+  .stats-content h2 {
+    font-size: 42px;
+    line-height: 1.4;
+  }
+
+  .stats-content p {
+    font-size: 18px;
+    /* line-height: 1.8; */
+    max-width: 800px;
+    /* border: 2px solid black; */
+  }
+
+  .learn-more {
+    font-size: 18px;
+  }
+}

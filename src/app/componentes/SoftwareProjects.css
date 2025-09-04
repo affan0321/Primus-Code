@@ -1,0 +1,16 @@
+.software-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* gap: 1.5rem; */
+}
+
+.project-info{
+    padding-top: 20px;
+}
+
+.project-info h3{
+    font-size: 25px;
+}

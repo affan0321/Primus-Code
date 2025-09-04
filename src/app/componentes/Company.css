@@ -332,3 +332,48 @@
     transform: translateY(0) scale(1);
   }
 }
+
+@media (min-width: 1920px) {
+  .company {
+    max-width: 80%;         /* wider container */
+    margin: 0 auto;
+    display: flex;             /* switch to grid for neat alignment */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 40px; */
+  }
+
+  .img-container,
+  .img-container1,
+  .img-container2,
+  .img-container3,
+  .img-container4,
+  .text-container {
+    width: 100%;              
+    max-width: 420px;         /* larger cards for big screens */
+    height: 260px;            /* keep height balanced */
+    margin: 0 auto;
+  }
+
+  .img-text {
+    width: 90%;
+    height: 240px;
+    padding: 0 12px;
+  }
+
+  .text-container h2 {
+    font-size: 28px;
+  }
+
+  .text-container p {
+    font-size: 14px;
+  }
+
+  .text-container .btn6 {
+    width: 120px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+

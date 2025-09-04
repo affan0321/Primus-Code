@@ -9,6 +9,7 @@
 .techstack-container {
   width: 80%;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .techstack-container h3 {
@@ -28,4 +29,44 @@
   gap: 50px;
   flex-wrap: wrap;
   margin-top: 60px;
+  padding-bottom: 100px;
+
 }
+
+.techstack-logos .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+
+/* Default styles */
+.techstack-logos .logo img {
+  /* width: 100px; */
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover swaps (replace hover-imageX.png with your hover versions) */
+.logo1 img:hover { content: url('/image 33.png'); }
+.logo2 img:hover { content: url('/image 33(1).png'); }
+.logo3 img:hover { content: url('/image 33(2).png'); }
+.logo4 img:hover { content: url('/image 33(3).png'); }
+
+.logo5 img:hover { content: url('/image 33(4).png'); }
+.logo6 img:hover { content: url('/image 33(5).png'); }
+.logo7 img:hover { content: url('/image 33(6).png'); }
+.logo8 img:hover { content: url('/image 33(7).png'); }
+
+.logo9 img:hover { content: url('/image 33(8).png'); }
+.logo10 img:hover { content: url('/image 33(9).png'); }
+.logo11 img:hover { content: url('/image 33(10).png'); }
+.logo12 img:hover { content: url('/image 33(11).png'); }
+
+.logo13 img:hover { content: url('/image 33(12).png'); }
+.logo14 img:hover { content: url('/image 33(13).png'); }
+.logo15 img:hover { content: url('/image 33(14).png'); }
+.logo16 img:hover { content: url('/image 33(15).png'); }
+
+

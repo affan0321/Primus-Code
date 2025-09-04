@@ -175,24 +175,6 @@
   }
 }
 
-/* Large Desktops: 1441px–1920px */
-@media (min-width: 1441px) and (max-width: 1920px) {
-  .offer-content p {
-    width: 430px;
-    font-size: 14px;
-    line-height: 1.8;
-  }
-}
-
-/* Ultra-Wide Screens: 1921px+ */
-@media (min-width: 1921px) {
-  .offer-content p {
-    width: 460px;
-    font-size: 15px;
-    line-height: 1.9;
-  }
-}
-
 
 
 /* Initial state */
@@ -248,46 +230,54 @@
 }
 
 
-/* 
-@media (min-width: 1440px) {
+/* Ultra-wide screens: ≥1920px */
+@media (min-width: 1920px) {
   .offer {
-    max-width: 1280px;
-    margin: 0 auto;
-    gap: 6rem;
+    max-width: 80%;
+    gap: 24rem;
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+
+  .offer-text h1 {
+    font-size: 40px;
   }
 
   .offer-text p {
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 1.8;
   }
 
   .offer-text img {
-    width: 550px;
+    width: 580px;
   }
 
   .offer-content {
     gap: 20px;
-    justify-content: space-between;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .offer-content > div {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    width: 48%;
-    border: 2px solid black;
-  }
-
-  .offer-content img {
-    text-align: center;
-    align-content: flex-end;
-    width: 50px;
+    width: auto;
+    max-width: 480px;
+    /* border: 2px solid black; */
   }
 
   .offer-content h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .offer-content p {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 430px;
   }
-} */
+
+  .offer-content img {
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+  }
+}

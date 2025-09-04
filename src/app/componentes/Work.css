@@ -485,6 +485,8 @@
   border: 2px solid grey;
 }
 
+
+
 .work-card.narrow ul li:hover{
   cursor: pointer;
   color: #2b59ff;
@@ -755,6 +757,89 @@
 .work-card.animate:nth-child(3) { transition-delay: 0.3s; }
 .work-card.animate:nth-child(4) { transition-delay: 0.45s; }
 
+
+/* ✅ Optimized styles only for Full HD desktops (1920px) */
+@media (min-width: 1920px) {
+  .work {
+    width: 75%;
+    max-width: 1600px;
+    /* margin: 80px auto; */
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+  }
+
+  .work-text h2 {
+    font-size: 42px;
+    line-height: 1.4;
+  }
+
+  .work-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 850px;
+  }
+
+  .work-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 60px;
+  }
+
+  .work-container > .work-card,
+  .work-container > .work-card1 {
+    width: 600px;
+    height: 320px;
+    padding: 32px;
+  }
+
+  .work-container > .work-card h3,
+  .work-container > .work-card1 h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .work-container > .work-card ul,
+  .work-container > .work-card1 ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .work-container > .work-card ul li,
+  .work-container > .work-card1 ul li {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .work-row {
+    gap: 100px;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .work-card.wide {
+    width: 750px !important;
+    height: 220px;
+    padding: 28px;
+  }
+
+  .work-card.narrow {
+    width: 480px !important;
+    height: 220px;
+    padding: 28px;
+  }
+
+  .work-card.wide h3,
+  .work-card.narrow h3 {
+    font-size: 26px;
+  }
+
+  .work-card.wide ul li,
+  .work-card.narrow ul li {
+    font-size: 18px;
+  }
+}
 
 
 

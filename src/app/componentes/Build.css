@@ -211,3 +211,65 @@
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+
+
+/* Extra large screens (1920px and above) */
+@media (min-width: 1920px) {
+  .build-container {
+    /* max-width: 1600px;   keeps content centered with breathing room */
+    margin: 0 auto;
+    /* gap: 3rem;           more spacing between header and form */
+    /* padding: 0 40px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .build-header {
+    width: 1000px;
+    align-content: center;
+    /* border: 2px solid black;         */
+  }
+
+  .build-header-text {
+     margin: 0 auto;
+    width: 65%;
+    /* border: 2px solid black; */
+  }
+
+  .build-header-text h3 {
+    font-size: 40px;     /* bigger headline for 4K monitors */
+  }
+
+  .build-header-text p {
+    font-size: 16px;
+    /* line-height: 1.6; */
+  }
+
+  .build-header-text img {
+    width: 700px;        /* increase image size */
+  }
+
+  .build-form {
+    width: 800px;
+    height: auto;        /* allow flexible height */
+    padding: 20px;
+    /* border: 2px solid black; */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;         /* stretch to form width */
+    font-size: 20px;
+    padding: 12px;
+  }
+  .form-group label{
+    font-size: 20px;
+  }
+
+  .btn8 {
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+  }
+}

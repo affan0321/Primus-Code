@@ -33,10 +33,10 @@ export default function Offer() {
             </div>
             <div className='offer-container'>
                 <div className='offer-content'>
-                    <div>
+                    <div className='offer-image'>
                         <img src="/img8.png" width={50} />
                     </div>
-                    <div>
+                    <div className='offers-h3p'>
                         <h3>Discovery & Consultation</h3>
                         <div>
                             <p>We meet with you to learn about your business, your goals, and your target audience.</p>
