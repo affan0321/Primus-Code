@@ -577,7 +577,7 @@
     width: 100% !important;
     height: auto;
     padding: 16px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .work-card h3,

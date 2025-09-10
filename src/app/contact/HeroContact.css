@@ -236,3 +236,42 @@
     width: 640px;
   }
 }
+
+
+/* 🎬 Keyframes */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ✨ Hero Content Animation */
+.heroContact-content h1,
+.heroContact-p {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.heroContact-content h1 {
+  animation-delay: 0.2s;
+}
+
+.heroContact-p {
+  animation-delay: 0.5s;
+}

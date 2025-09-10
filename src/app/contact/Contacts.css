@@ -101,3 +101,66 @@
     width: 50px;
   }
 }
+
+
+/* 🎬 Keyframes */
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✨ Container Animation */
+.contacts-container {
+  opacity: 0;
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+.contacts-container:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.contacts-container:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.contacts-container:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* 🎯 Text Animation */
+.contacts-container h5,
+.contacts-container p {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.contacts-container h5 {
+  animation-delay: 0.3s;
+}
+.contacts-container p {
+  animation-delay: 0.5s;
+}
+
+/* 🔍 Icon Hover Effect */
+.contacts-container img {
+  transition: transform 0.3s ease;
+}
+
+.contacts-container img:hover {
+  transform: scale(1.1) rotate(5deg);
+}

@@ -40,3 +40,103 @@
     color: #fff;
     width: 240px;
 }
+
+/* Initial hidden state */
+.SkillsInnerHero {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.SkillsInnerHero.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Text animation */
+.SkillsInnerHero-content h2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.SkillsInnerHero.show .SkillsInnerHero-content h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+/* Button animation */
+.SkillsInnerHero-content button {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.SkillsInnerHero.show .SkillsInnerHero-content button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+
+/* 📱 Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .SkillsInnerHero {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .SkillsInnerHero-container {
+    width: 100%;
+  }
+
+  .SkillsInnerHero-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .SkillsInnerHero-content h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .SkillsInnerHero-content button {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* 📲 Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .SkillsInnerHero {
+    height: auto;
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .SkillsInnerHero-container {
+    width: 90%;
+  }
+
+  .SkillsInnerHero-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .SkillsInnerHero-content h2 {
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  .SkillsInnerHero-content button {
+    width: auto;
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+}

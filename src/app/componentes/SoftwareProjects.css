@@ -14,3 +14,50 @@
 .project-info h3{
     font-size: 25px;
 }
+
+/* ✅ Tablet Responsiveness (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .software-flex {
+    justify-content: center;
+    gap: 25px; /* slightly reduced gap for better fit */
+  }
+
+  .software-flex .project-card {
+    flex: 1 1 calc(50% - 30px); /* 2 cards per row */
+    max-width: 400px;
+  }
+
+  .software-flex img {
+    width: 100%;
+    /* height: auto; */
+  }
+
+  .project-info h3 {
+    font-size: 22px; /* slightly smaller for tablets */
+  }
+
+  .projects-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .projects-btn button {
+    flex: 1 1 auto;
+    min-width: 200px;
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .projects-text h1 {
+    font-size: 32px;
+  }
+
+  .project-paragraph p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+}

@@ -26,3 +26,89 @@
   color: #fff;
   font-size: 38px;
 }
+
+
+/* Background fade-in */
+.heroBlogInner {
+  opacity: 0;
+  transform: scale(1.05);
+  animation: fadeBg 1s ease forwards;
+}
+
+/* Animate heading inside */
+.heroBlogInnerContent h3 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.5s; /* heading animates after bg */
+}
+
+/* Keyframes */
+@keyframes fadeBg {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* 📱 Mobile (≤480px) */
+@media (max-width: 480px) {
+  .heroBlogInner {
+    height: auto;
+    padding: 100px 20px 60px 20px; /* extra breathing space */
+    text-align: center;
+  }
+
+  .heroBlogInnerContainer {
+    width: 95%;
+  }
+
+  .heroBlogInnerContent {
+    width: 100%;
+    height: auto;
+  }
+
+  .heroBlogInnerContent h3 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+}
+
+/* 📲 Tablets (481px–1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .heroBlogInner {
+    height: auto;
+    padding: 120px 40px 80px 40px;
+    text-align: center;
+  }
+
+  .heroBlogInnerContainer {
+    width: 90%;
+  }
+
+  .heroBlogInnerContent {
+    width: 100%;
+    height: auto;
+  }
+
+  .heroBlogInnerContent h3 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+}

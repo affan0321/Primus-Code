@@ -29,3 +29,116 @@
     color: #000000;
     font-size: bold;
 }
+
+
+/* Base hidden state */
+.content > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When visible */
+.content.show > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger effect (delay for children) */
+.content.show > *:nth-child(1) { transition-delay: 0.1s; }
+.content.show > *:nth-child(2) { transition-delay: 0.2s; }
+.content.show > *:nth-child(3) { transition-delay: 0.3s; }
+.content.show > *:nth-child(4) { transition-delay: 0.4s; }
+.content.show > *:nth-child(5) { transition-delay: 0.5s; }
+.content.show > *:nth-child(6) { transition-delay: 0.6s; }
+.content.show > *:nth-child(7) { transition-delay: 0.7s; }
+.content.show > *:nth-child(8) { transition-delay: 0.8s; }
+.content.show > *:nth-child(9) { transition-delay: 0.9s; }
+
+/* Cards can also slide-up nicely */
+.card-containers .card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.content.show .card-containers .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content.show .card-containers .card:nth-child(1) { transition-delay: 0.3s; }
+.content.show .card-containers .card:nth-child(2) { transition-delay: 0.5s; }
+.content.show .card-containers .card:nth-child(3) { transition-delay: 0.7s; }
+
+
+/* ✅ Mobile (≤480px) */
+@media (max-width: 480px) {
+  .content {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .content h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .h4-p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .card-containers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-containers .card {
+    width: 100%;
+  }
+}
+
+/* ✅ Tablets (481px – 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .content {
+    width: 90%;
+    margin-top: 25px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .content h4 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .card-containers {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card-containers .card {
+    width: 45%;
+  }
+}

@@ -46,3 +46,152 @@
     align-items: center;
     align-content: center;
 }
+
+
+/* Keyframes */
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Apply animations */
+.heroSkills-content h1 {
+  animation: fadeSlideDown 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.heroSkills-p {
+  animation: fadeSlideDown 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+
+.heroSkills-content img {
+  animation: fadeInScale 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.heroSkills-inner {
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+
+/* 📱 Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .heroSkills {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .heroSkills-container {
+    width: 100%;
+  }
+
+  .heroSkills-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroSkills-content h1 {
+    font-size: 26px;
+  }
+
+  .heroSkills-p {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  .heroSkills-content img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .heroSkills-inner {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .dropdowns {
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+}
+
+/* 📲 Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .heroSkills {
+    height: auto;
+    padding: 80px 40px;
+  }
+
+  .heroSkills-container {
+    width: 90%;
+  }
+
+  .heroSkills-content h1 {
+    font-size: 34px;
+  }
+
+  .heroSkills-p {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .heroSkills-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .heroSkills-inner {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .dropdowns {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 95%;
+  }
+}

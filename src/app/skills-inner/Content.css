@@ -15,6 +15,10 @@
     background-color: #F6F6FE;
     margin-top: 70px;
     margin-bottom: 30px;
+    /* border: 2px solid black; */
+    height: 200px;
+    align-content: center;
+    border-radius: 12px;
 }
 .content-ceo p{
     width: 60%;
@@ -34,3 +38,154 @@
 h1{
     color: #1C2F58FC;
 }
+
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in from left */
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade-in from right */
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Global class to trigger */
+.animate {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+.fade-left {
+  animation: fadeLeft 1s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 1s ease forwards;
+}
+
+/* 📱 Mobile Devices: ≤ 480px */
+@media (max-width: 480px) {
+  .content {
+    width: 95%;
+    margin-top: 100px;
+  }
+
+  .content-img {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-ceo {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .content-ceo p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .card-container1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* 📲 Tablets: 481px–1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .content {
+    width: 90%;
+    margin-top: 150px;
+  }
+
+  .content-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .content-img img {
+    width: 45%;
+    height: auto;
+  }
+
+  .content-ceo {
+    height: auto;
+    padding: 30px;
+  }
+
+  .content-ceo p {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .card-container1 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+

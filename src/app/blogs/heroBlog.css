@@ -40,3 +40,149 @@
     width: 430px;
     margin-top: 10px;
 }
+
+
+/* Keyframes */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Apply staged animations */
+.heroblog-text {
+  animation: slideInLeft 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.heroblog-textContainer h1 {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.heroblog-textContainer p {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.7s;
+}
+
+.heroBlog-content img {
+  animation: slideInRight 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.9s;
+}
+
+/* 📱 Mobile Devices (≤480px) */
+@media (max-width: 480px) {
+  .heroBlog {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .heroBlog-container {
+    width: 95%;
+  }
+
+  .heroBlog-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .heroblog-text {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .heroblog-textContainer h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .heroBlog p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .heroBlog-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+/* 📲 Tablets (481px–1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .heroBlog {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .heroBlog-container {
+    width: 90%;
+  }
+
+  .heroBlog-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .heroblog-text {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    padding: 30px;
+  }
+
+  .heroblog-textContainer h1 {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .heroBlog p {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  .heroBlog-content img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+}

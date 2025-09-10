@@ -103,3 +103,80 @@
     color: #000000;
     font-size: bold;
 }
+
+
+/* Keyframes for reveal */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Start hidden */
+.card {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Animate in when visible */
+.card.show {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* 📱 Mobile (≤480px) */
+@media (max-width: 480px) {
+  .card-container {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-price {
+    font-size: 0.9rem;
+  }
+
+  
+}
+
+/* 📲 Tablets (481px–1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .card-container {
+    width: 90%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+    max-width: 400px;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+  }
+
+  .card-price {
+    font-size: 1rem;
+  }
+
+
+}

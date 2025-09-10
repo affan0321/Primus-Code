@@ -1,7 +1,15 @@
+"use client"
+import { useEffect, useState } from "react";
 import './Details.css'
 export default function Details() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setIsVisible(true), 150);
+        return () => clearTimeout(timer);
+    }, []);
     return (
-        <div className="details">
+        <div className={`details ${isVisible ? "show" : ""}`}>
             <div className="details-container">
                 <div className='box'>
                     <div className='box-content'>

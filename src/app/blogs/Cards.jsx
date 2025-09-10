@@ -1,7 +1,28 @@
+"use client"
+import { useEffect } from "react";
 import Button from './Button'
 import './Cards.css'
 import Link from 'next/link'
 export default function Cards() {
+     useEffect(() => {
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            // staggered delay for each card
+            entry.target.style.animationDelay = `${i * 0.15}s`;
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // only animate once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+  }, []);
     return (
         <>
             <div className='card-container'>
