@@ -5,9 +5,9 @@
   gap: 40px;
   /* border: 2px solid black; */
 }
-
-.project-info h3,p{
-    color: #fff;
+.project-info h3,
+.project-info p {
+  color: #fff;
 }
 
 .project-info p{

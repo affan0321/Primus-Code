@@ -10,7 +10,7 @@ export default function Craft() {
                     </div>
                 </div>
                 <div>
-                    <img src="/version.png" width={400} />
+                    <img src="/Version.png" width={400} />
                 </div>
             </div>
         </div>

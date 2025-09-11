@@ -3,6 +3,31 @@ import { useEffect, useState, useRef } from "react";
 import './StatsOdometer.css'
 
 export default function StatsOdometer() {
+  useEffect(() => {
+  const node = statRef.current;
+  if (!node) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting && !hasAnimated) {
+        animateCount();
+        setHasAnimated(true);
+      }
+    },
+    { threshold: 0.1 } // trigger sooner
+  );
+
+  observer.observe(node);
+
+  // ✅ check immediately on mount
+  if (node.getBoundingClientRect().top < window.innerHeight) {
+    animateCount();
+    setHasAnimated(true);
+  }
+
+  return () => observer.disconnect();
+}, [value, hasAnimated]);
+
   return (
     <section className="stats-section" id="stats">
       <div className="stats-container">
