@@ -2,6 +2,7 @@
 import React from 'react';
 import './Work.css';
 import { useRef,useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Work() {
    const sectionRef = useRef(null);
@@ -40,39 +41,39 @@ export default function Work() {
       <div className="work-container">
         <div className="work-card">
           <h3>Development & Implementation</h3>
-          <ul>
-            <li>Website Development</li>
-            <li>Mobile App Development</li>
-            <li>Custom Software Development</li>
-            <li>AI & Machine Learning Solutions</li>
-            <li>Data & Analytics (Data Warehousing & ETL, BI Dashboards & Reporting)</li>
+          <ul className='ul'>
+            <Link href="/web-dev"><li>Website Development</li></Link>
+            <Link href="/mob-dev"><li>Mobile App Development</li></Link>
+            <Link href="/software-dev"><li>Custom Software Development</li></Link>
+            <Link href="/AI"><li>AI & Machine Learning Solutions</li></Link>
+            <Link href="data"><li>Data & Analytics (Data Warehousing & ETL, BI Dashboards & Reporting)</li></Link>
           </ul>
         </div>
 
         <div className="work-card1">
           <h3>Consulting & Staff Augmentation</h3>
-          <ul>
-            <li>IT Staff Augmentation (Developers, QA, DevOps)</li>
-            <li>UI/UX Design & Product Strategy</li>
-            <li>Digital Transformation Consulting (Process Audits, Technology Roadmaps)</li>
+          <ul className='ul'>
+            <Link href="IT"><li>IT Staff Augmentation (Developers, QA, DevOps)</li></Link>
+            <Link href="UI"><li>UI/UX Design & Product Strategy</li></Link>
+            <Link href="digital"><li>Digital Transformation Consulting (Process Audits, Technology Roadmaps)</li></Link>
           </ul>
         </div>
 
         <div className="work-row">
           <div className="work-card wide">
             <h3>E-Commerce Solutions</h3>
-            <ul>
-              <li>Shopify Development</li>
-              <li>WooCommerce Development</li>
-              <li>Store Migrations & Platform Integrations</li>
+            <ul className='ul'>
+              <Link href="shopify"><li>Shopify Development</li></Link>
+              <Link href="wooCommerce"><li>WooCommerce Development</li></Link>
+              <Link href="store"><li>Store Migrations & Platform Integrations</li></Link>
             </ul>
           </div>
 
           <div className="work-card narrow">
             <h3>Digital Marketing Services</h3>
-            <ul>
-              <li>SEO & Analytics</li>
-              <li>Paid Media (PPC & Social Ads)</li>
+            <ul className='ul'>
+              <Link href="SEO"><li>SEO & Analytics</li></Link>
+              <Link href="paid-marketing"><li>Paid Media (PPC & Social Ads)</li></Link>
             </ul>
           </div>
         </div>

@@ -737,6 +737,10 @@
   }
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Start hidden and moved slightly down */
 .work-card,
 .work-card1 {
@@ -842,7 +846,19 @@
 }
 
 
+.ul {
+  list-style-type: none; /* remove default dots */
+  padding-left: 1.5rem;  /* keep spacing */
+}
 
+.ul li::before {
+  content: "–";          /* en dash */
+  color: #d1d4e3;          /* grey dash */
+  font-weight: bold;
+  display: inline-block;
+  width: 1.2rem;         /* space between dash and text */
+  margin-left: -1.2rem;  /* align with list */
+}
 
 
 

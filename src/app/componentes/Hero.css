@@ -409,3 +409,8 @@
   }
 }
 
+
+.btn2:hover{
+  background-color: #25FFA9;
+  border: #25FFA9;
+}

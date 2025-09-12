@@ -17,14 +17,25 @@
     gap: 20px;
 }
 .footer-links ul{
-    list-style: none;
+    list-style-type: none !important;
+    list-style: none !important;
     /* padding: 0; */
+}
+
+.footer-links ul li{
+  list-style-type: none !important;
+  list-style: none !important;
 }
 
 .footer-links p{
   /* border: 2px solid black; */
   height: 10px;
 }
+
+.footer-links a{
+  color: #fff;
+}
+
 .social-icons{
     display: flex;
     gap: 10px;

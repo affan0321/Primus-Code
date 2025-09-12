@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from 'react';
 import './Footer.css';
+import Link from 'next/link';
 export default function Footer() {
      const footerRef = useRef(null);
 
@@ -42,10 +43,10 @@ export default function Footer() {
             <div className='footer-links'>
                 <div>
                     <ul>
-                        <li>About Us</li>
-                        <li>Our Work</li>
-                        <li>Contact Us</li>
-                        <li>Blogs</li>
+                        <Link href="/about"><li>About Us</li></Link>
+                        <Link href="/skills"><li>Our Work</li></Link>
+                        <Link href="/contact"><li>Contact Us</li></Link>
+                        <Link href="/blogs"><li>Blogs</li></Link>
                     </ul>
                 </div>
                 <div>

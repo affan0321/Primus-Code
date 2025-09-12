@@ -30,7 +30,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 6px;
-  z-index: 10;
+  z-index: 100;
   list-style: none;
   padding: 0;
 }
@@ -40,6 +40,7 @@
   cursor: pointer;
   font-size: 14px;
   color: #333;
+  z-index: 100;
 }
 
 .menu li:hover {

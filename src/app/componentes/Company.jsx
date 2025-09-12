@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import './Company.css';
+import Link from 'next/link';
 export default function Company() {
     const companyRef = useRef(null);
 
@@ -36,7 +37,7 @@ export default function Company() {
             <div className='text-container'>
                 <h2>Our Work <span>Speaks For Itself</span></h2>
                 <p>See How We’ve Helped Brands Transform <br /> Their Digital Presence</p>
-                <p className='btn6'>Our Work</p>
+                <Link href="/skills"><p className='btn6'>Our Work</p></Link>
             </div>
             <div className='img-container1'>
                 <div className='img-text'>

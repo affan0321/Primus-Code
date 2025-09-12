@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
 import './Banner.css';
+import Link from 'next/link';
 export default function Banner() {
     const bannerRef = useRef(null);
 
@@ -31,7 +32,7 @@ export default function Banner() {
             </div>
             <div className='banner-text'>
                 <p>Whether you need a custom website, a mobile app, AI-driven solutions, or expert consulting—we’re here to help turn your vision into reality. Get in touch with our team today and let’s discuss how we can make it happen</p>
-                <button className='btn4'>Contact Us</button>
+                <Link href='/contact'><button className='btn4'>Contact Us</button></Link>
             </div>
         </div>
         </div>

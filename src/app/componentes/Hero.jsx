@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
     return (
@@ -40,7 +41,7 @@ export default function Home() {
                             <h1>Crafting Digital Solutions That <span>Drive Growth</span></h1>
                             <p>We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions. </p>
                             <button className='btn1'>Getting Started</button>
-                            <button className='btn2'>Our Work</button>
+                            <Link href="/skills"><button className='btn2'>Our Work</button></Link>
                         </div>
                     </div>
                     <div>
