@@ -157,25 +157,26 @@ function Stat({ value, suffix, label }) {
   const statRef = useRef(null);
 
   useEffect(() => {
+  const node = statRef.current;
+  if (!node) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          animateCount();
-          setHasAnimated(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (statRef.current) {
-      observer.observe(statRef.current);
+  const observer = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting && !hasAnimated) {
+      animateCount();
+      setHasAnimated(true);
     }
+  }, { threshold: 0.5 });
 
-    return () => {
-      if (statRef.current) observer.unobserve(statRef.current);
-    };
-  }, [value, hasAnimated]);
+  observer.observe(node);
+
+  // ✅ immediate check in case it's already visible
+  if (node.getBoundingClientRect().top < window.innerHeight) {
+    animateCount();
+    setHasAnimated(true);
+  }
+
+  return () => observer.disconnect();
+}, [value, hasAnimated]);
 
   const animateCount = () => {
     let start = 0;
