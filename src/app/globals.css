@@ -7,3 +7,37 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
+
+/* ✅ Apply globally (recommended for hero animations) */
+/* body, html {
+  overflow-x: hidden;
+} */
+
+body {
+  overflow-x: hidden;   /* only block horizontal scroll */
+  overflow-y: auto;     /* allow vertical scroll */
+}
+
+/* globals.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* white background */
+  color: #000000;           /* black text */
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+code {
+  font-family: var(--font-geist-mono), monospace;
+}

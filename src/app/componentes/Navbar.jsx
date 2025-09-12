@@ -54,13 +54,25 @@ export default function Navbar({ variant = "light" }) {
       >
         <div className="navbar-inner">
           {/* Logo */}
-          <div className="logo">
+          {/* <div className="logo">
             <img
               src={variant === "dark" ? "/Logo-04.png" : "/Logo-03.png"}
               width={100}
               alt="Primus Code Logo"
             />
+          </div> */}
+
+          {/* Logo with link */}
+          <div className="logo">
+            <Link href="/" passHref>
+              <img
+                src={variant === "dark" ? "/Logo-04.png" : "/Logo-03.png"}
+                width={100}
+                alt="Primus Code Logo"
+              />
+            </Link>
           </div>
+
 
           {/* ✅ Hamburger (only render on mobile/tablet) */}
           {isMobile && (
@@ -78,9 +90,9 @@ export default function Navbar({ variant = "light" }) {
               <li>
                 <Link href="/about">About Us</Link>
               </li>
-             
-                <MegaDropdown />
-               <li>
+
+              <MegaDropdown />
+              <li>
                 <Link href="/skills">Our Work</Link>
               </li>
               <li>
