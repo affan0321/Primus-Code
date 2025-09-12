@@ -157,8 +157,7 @@ function Stat({ value, suffix, label }) {
   const statRef = useRef(null);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
