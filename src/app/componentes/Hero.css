@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('/Group.png');
+  background-image: url("/Group.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%; 
+  height: 100%;
   flex-wrap: wrap;
   color: #fff;
 }
@@ -33,7 +33,7 @@
 }
 
 .hero-content h1 span {
-  color: #25FFA9;
+  color: #25ffa9;
 }
 
 .hero-content p {
@@ -46,7 +46,7 @@
   width: 130px;
   height: 40px;
   border: none;
-  background-color: #5454E8;
+  background-color: #5454e8;
   border-radius: 10px;
   color: #fff;
 }
@@ -154,57 +154,7 @@
     padding-top: 110px;
   }
 }
-
-/* ✅ Animated vertical lines */
-.hero-lines {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  /* transform: translateX(-50%); */
-  pointer-events: none; /* Doesn't block clicks */
-  overflow: hidden;
-  z-index: 0; /* stays behind content */
-}
-
-.hero-lines::before,
-.hero-lines::after {
-  content: '';
-  position: absolute;
-  top: -100%;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, #25FFA9, transparent);
-  animation: lineFall 4s linear infinite;
-}
-
-.hero-lines::after {
-  left: 60%;
-  animation-delay: 2s;
-}
-
-.hero-lines::before {
-  left: 40%;
-  animation-delay: 1s;
-}
-
-/* ✅ Animation for falling vertical lines */
-@keyframes lineFall {
-  0% {
-    top: -100%;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
-  }
-}
-
-/* Container for animated lines */
+/* Animated grid lines container */
 .hero-lines {
   position: absolute;
   top: 0;
@@ -212,45 +162,57 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  overflow: hidden;
   z-index: 0;
 }
 
 /* Vertical lines */
-.hero-lines .v-line {
+.v-line {
   position: absolute;
-  top: -100%;
-  width: 2px;
+  bottom: -100%;
+  width: 1px;
   height: 100%;
-  background: linear-gradient(to bottom, transparent, #25FFA9, transparent);
-  animation: lineFall 5s linear infinite;
-  opacity: 0.5;
+  background: rgba(255, 255, 255, 0.08); /* faint grid look */
+  animation: verticalRise 6s linear infinite;
 }
 
 /* Horizontal lines */
-.hero-lines .h-line {
+.h-line {
   position: absolute;
-  left: -100%;
-  height: 2px;
+  right: -100%;
+  height: 1px;
   width: 100%;
-  background: linear-gradient(to right, transparent, #25FFA9, transparent);
-  animation: lineSlide 6s linear infinite;
-  opacity: 0.5;
+  background: rgba(255, 255, 255, 0.08);
+  animation: horizontalSlide 6s linear infinite;
 }
 
 /* Animations */
-@keyframes lineFall {
-  0% { top: -100%; opacity: 0; }
-  40% { opacity: 1; }
-  100% { top: 100%; opacity: 0; }
+@keyframes verticalRise {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
 }
 
-@keyframes lineSlide {
-  0% { left: -100%; opacity: 0; }
-  40% { opacity: 1; }
-  100% { left: 100%; opacity: 0; }
+@keyframes horizontalSlide {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    right: 100%;
+    opacity: 0;
+  }
 }
-
 
 /* ✅ Large desktop responsiveness */
 @media (min-width: 1920px) {
@@ -288,9 +250,6 @@
     height: auto !important;
   }
 }
-
-
-
 
 /* ✅ Mobile small (up to 480px) */
 @media (max-width: 480px) {
@@ -409,8 +368,103 @@
   }
 }
 
-
-.btn2:hover{
-  background-color: #25FFA9;
-  border: #25FFA9;
+.btn2:hover {
+  background-color: #25ffa9;
+  border: #25ffa9;
 }
+
+@keyframes verticalPulse {
+  0% {
+    bottom: -100%;
+    opacity: 0;
+  }
+  15% {
+    bottom: 0%;
+    opacity: 1;
+  }
+  50% {
+    bottom: 100%;
+    opacity: 1;
+  }
+  85% {
+    bottom: 100%;
+    opacity: 0;
+  }
+  100% {
+    bottom: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes horizontalPulse {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  15% {
+    right: 0%;
+    opacity: 1;
+  }
+  50% {
+    right: 100%;
+    opacity: 1;
+  }
+  85% {
+    right: 100%;
+    opacity: 0;
+  }
+  100% {
+    right: -100%;
+    opacity: 0;
+  }
+}
+
+
+.v-line {
+  position: absolute;
+  bottom: -100%;
+  width: 1px;
+  height: 100%;
+  background: rgba(10, 227, 224, 0.838);
+  animation: verticalPulse 8s ease-in-out infinite;
+}
+
+.h-line {
+  position: absolute;
+  right: -100%;
+  height: 1px;
+  width: 100%;
+  /* background: rgba(67, 212, 86, 0.694); */
+  animation: horizontalPulse 8s ease-in-out infinite;
+}
+
+
+.v-line,
+.h-line {
+  background:#25ffa9; /* slightly brighter */
+}
+
+/* Vertical lines */
+.v-line {
+  width: 2px; /* thicker */
+}
+
+/* Horizontal lines */
+.h-line {
+  height: 1px; /* thicker */
+}
+
+.v-line {
+  animation: verticalPulse 4s ease-in-out infinite;
+}
+
+.h-line {
+  animation: horizontalPulse 4s ease-in-out infinite;
+}
+
+/* 
+.v-line,
+.h-line {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+} */
+
