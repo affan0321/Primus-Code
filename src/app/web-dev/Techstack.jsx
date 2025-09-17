@@ -1,5 +1,31 @@
+"use client"
+import { useEffect } from "react";
 import './Techstack.css'
+
 export default function Techstack() {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-in");
+                        observer.unobserve(entry.target); // animate once
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        const elements = document.querySelectorAll(
+            ".techstack-container, .techstack-logos .logo"
+        );
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
+
+    
     return (
         <div className="techstack">
             <div className="techstack-container">

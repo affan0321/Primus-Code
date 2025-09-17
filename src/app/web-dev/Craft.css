@@ -27,3 +27,128 @@
 .craft-container-p{
 border: 2px saddlebrown;
 }
+
+
+/* --- Animation defaults --- */
+.craft-container {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.craft-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.craft-text {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-in-out 0.2s;
+}
+
+.craft-container.animate .craft-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.craft-image {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s ease-in-out 0.4s;
+}
+
+.craft-container.animate .craft-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .craft {
+    width: 95%;
+    padding: 60 10px;
+  }
+
+  .craft-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .craft-container h3 {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .craft-container p {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .craft-container img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .craft {
+    width: 90%;
+  }
+
+  .craft-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .craft-container h3 {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .craft-container p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .craft-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .craft {
+    width: 90%;
+  }
+
+  .craft-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .craft-container h3 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .craft-container p {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .craft-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}

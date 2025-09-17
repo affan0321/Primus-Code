@@ -58,3 +58,143 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
+/* keep your existing styles exactly as they are */
+
+.offers {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.offers.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .offers {
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .offers-p {
+    width: 90%;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .offering-container {
+    width: 95%;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .box-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-size {
+    width: 95%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .box-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .box-content h5 {
+    font-size: 1rem;
+  }
+
+  .box-p {
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .box-content img {
+    width: 28px;
+    height: auto;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .offers-p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .offering-container {
+    width: 90%;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .box-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-size {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box-content {
+    gap: 12px;
+  }
+
+  .box-p {
+    padding-left: 20px;
+    font-size: 0.95rem;
+  }
+
+  .box-content img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+/* --- Tablet screens: 769px to 1040px --- */
+@media (max-width: 1040px) and (min-width: 769px) {
+  .offers-p {
+    width: 85%;
+    font-size: 1.05rem;
+  }
+
+  .offering-container {
+    width: 85%;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .box-container {
+    width: 320px;
+    height: auto;
+  }
+
+  .box-size {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box-p {
+    padding-left: 30px;
+    font-size: 1rem;
+  }
+
+  .box-content img {
+    width: 30px;
+    height: auto;
+  }
+}

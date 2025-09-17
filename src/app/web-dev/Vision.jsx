@@ -1,5 +1,27 @@
+"use client";
+import { useEffect } from "react";
 import './Vision.css'
 export default function Vision() {
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-in");
+                        observer.unobserve(entry.target); // animate once
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        const elements = document.querySelectorAll(
+            ".vision-container h2, .vision img"
+        );
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
     return (
         <div className='vision'>
             <div className="vision-container">

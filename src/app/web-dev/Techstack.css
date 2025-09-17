@@ -70,3 +70,270 @@
 .logo16 img:hover { content: url('/image 33(15).png'); }
 
 
+/* Initial state (hidden) */
+.techstack-container,
+.techstack-logos .logo {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animate in */
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .techstack-container {
+    width: 90%;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .techstack-p {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .techstack-container h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .techstack-logos {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+
+  .techstack-logos .logo {
+    padding: 10px;
+  }
+
+  .techstack-logos .logo img {
+    max-width: 80px;
+    height: auto;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .techstack-container {
+    width: 90%;
+    text-align: center;
+  }
+
+  .techstack-p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .techstack-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .techstack-logos {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  .techstack-logos .logo img {
+    max-width: 90px;
+    height: auto;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .techstack-container {
+    width: 85%;
+    text-align: center;
+  }
+
+  .techstack-p {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .techstack-container h3 {
+    font-size: 2rem;
+  }
+
+  .techstack-logos {
+    width: 85%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding-bottom: 100px;
+  }
+
+  .techstack-logos .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+/* --- Logo Container Fix --- */
+.techstack-logos .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 120px; /* Ensures consistent vertical alignment */
+  box-sizing: border-box;
+}
+
+/* --- Logo Image Normalization --- */
+.techstack-logos .logo img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 480px) {
+  .techstack-logos .logo {
+    height: 120px;
+  }
+
+  .techstack-logos .logo img {
+    max-height: 90px;
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .techstack-logos .logo {
+    height: 130px;
+  }
+
+  .techstack-logos .logo img {
+    max-height: 100px;
+    max-width: 100px;
+  }
+}
+
+.techstack-logos .logo {
+  height: 140px; /* Increased from 120px */
+  padding: 20px;
+}
+
+.techstack-logos .logo img {
+  max-height: 110px; /* Increased from 100% */
+  max-width: 110px;
+  object-fit: contain;
+}
+
+/* --- Final Responsive Logo Fix --- */
+.techstack-logos .logo img {
+  width: 100%;
+  max-width: 100px; /* Controls max size */
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.techstack-logos .logo img {
+  width: 100%;
+  max-width: 120px; /* Increased from 100px */
+  max-height: 120px; /* Increased from 110px */
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .techstack-logos .logo {
+    height: 140px;
+  }
+
+  .techstack-logos .logo img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .techstack-logos .logo {
+    height: 150px;
+  }
+
+  .techstack-logos .logo img {
+    max-width: 110px;
+    max-height: 110px;
+  }
+}
+
+@media (min-width: 769px) {
+  .techstack-logos .logo {
+    height: 160px;
+  }
+
+  .techstack-logos .logo img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .techstack-container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .techstack-container h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .techstack-p p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .techstack-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .techstack-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .techstack-p p {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .techstack-container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .techstack-container h3 {
+    font-size: 2rem;
+  }
+
+  .techstack-p p {
+    width: 100%;
+    font-size: 1.05rem;
+    margin-top: 10px;
+  }
+}
+

@@ -28,3 +28,84 @@
   margin: 0 auto;
   margin-top: 50px;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .tool {
+    height: auto;
+    padding-bottom: 60px;
+    margin-bottom: 160px;
+  }
+
+  .tool-container h2 {
+    width: 90%;
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .tool-container p {
+    width: 90%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  .tool-img img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-top: 30px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .tool {
+    height: auto;
+    padding-bottom: 80px;
+    margin-bottom: 200px;
+  }
+
+  .tool-container h2 {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+
+  .tool-container p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .tool-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 40px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .tool {
+    height: auto;
+    padding-bottom: 100px;
+    margin-bottom: 240px;
+  }
+
+  .tool-container h2 {
+    width: 85%;
+    font-size: 2rem;
+  }
+
+  .tool-container p {
+    width: 85%;
+    font-size: 1.05rem;
+  }
+
+  .tool-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 50px;
+  }
+}

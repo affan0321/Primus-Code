@@ -6,8 +6,8 @@ export default function HeroAI(){
                 <div className="HeroWebDev-content">
                     <div>
                         <div>
-                            <h1>Intelligent Systems That Learn, <br />Adapt, <span>and Deliver Results</span></h1>
-                            <p>We empower businesses to thrive in the digital <br />landscape with end-to-end technology and marketing <br /> solutions. </p> <br />
+                            <h1 className='h1'>Intelligent Systems That Learn, Adapt, <span>and Deliver Results</span></h1>
+                            <p className='p'>We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions. </p> 
                             <button className='btn1'>Getting Started</button>
                             <button className='btn2'>Our Work</button>
                         </div>

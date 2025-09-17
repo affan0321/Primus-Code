@@ -27,3 +27,97 @@
     font-size: 14px;
     width: 500px;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .software {
+    width: 95%;
+    margin-top: 30px;
+  }
+
+  .software-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .software-container h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .software-container p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .software-container img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .software {
+    width: 90%;
+  }
+
+  .software-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .software-container h3 {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .software-container p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .software-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .software {
+    width: 85%;
+  }
+
+  .software-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .software-container h3 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .software-container p {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .software-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 20px;
+  }
+}

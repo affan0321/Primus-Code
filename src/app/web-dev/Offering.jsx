@@ -1,6 +1,29 @@
+"use client"
 import './Offering.css'
+import { useEffect } from "react";
+
 
 export default function Offering() {
+     useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-in");
+                        observer.unobserve(entry.target); // animate only once
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        const elements = document.querySelectorAll(
+            ".offering h1, .offering-p, .offering-container .box"
+        );
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
     return (
         <div className='offering'>
             <h1>What We Offer</h1>

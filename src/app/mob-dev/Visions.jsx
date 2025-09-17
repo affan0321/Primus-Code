@@ -1,8 +1,33 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
 import './Visions.css'
 
 export default function Visions(){
+    const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(sectionRef.current); // animate once
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
     return(
-        <div className='visions'>
+        <div ref={sectionRef}  className={`visions ${isVisible ? "animate" : ""}`}>
             <div className='visions-container'>
                 <div>
                     <h3>Bring Your Vision <span>To Their Fingertips</span></h3>

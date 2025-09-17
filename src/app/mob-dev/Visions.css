@@ -24,3 +24,105 @@
 .visions-container span{
     color: #5454E8;
 }
+
+/* 🔹 keep your original styles as is */
+
+.visions {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.visions.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .visions {
+    width: 95%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .visions-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .visions-container h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .visions-container p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .visions-container img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .visions {
+    width: 90%;
+  }
+
+  .visions-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .visions-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .visions-container p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .visions-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .visions {
+    width: 85%;
+  }
+
+  .visions-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .visions-container h3 {
+    font-size: 2rem;
+  }
+
+  .visions-container p {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .visions-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}

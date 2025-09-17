@@ -1,8 +1,35 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
 import './Offers.css'
 
 export default function Offers() {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(sectionRef.current); // run once
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) observer.unobserve(sectionRef.current);
+        };
+    }, []);
     return (
-        <div className='offers'>
+        <div
+            ref={sectionRef}
+            className={`offers ${isVisible ? "animate" : ""}`}
+        >
             <h2>What We Offer</h2>
             <p className='offers-p'>Whether you're launching, growing, or rebranding, we’ve got the tools and expertise to help you succeed online.</p>
             <div className='offering-container'>
