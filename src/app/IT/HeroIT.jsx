@@ -6,8 +6,8 @@ export default function HeroIT(){
             <div className="hero-container">
             <div className='heroAbout-content'>
                 <div>
-                    <h1>Scale Smart with Expert IT <br /> Talent, <span>On Demand</span></h1><br />
-                            <p>We empower businesses to thrive in the digital landscape with <br /> end-to-end technology and marketing solutions. <br /> solutions. </p> <br />
+                    <h1 className='ITh1'>Scale Smart with Expert IT Talent, <span>On Demand</span></h1>
+                            <p className='ITp'>We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions </p>
                             <button className='btn1'>Getting Started</button>
                             <button className='btn9'>Our Work</button>
                 </div>

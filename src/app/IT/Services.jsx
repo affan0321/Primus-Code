@@ -11,7 +11,7 @@ export default function Services() {
                         <h2>What We <span>Offer</span></h2>
                         <div className='services-img'>
                             <div>
-                                <img src="/Group 375.png" alt="" />
+                                <img src="/Group 375.png" width={40} />
                             </div>
                             <div>
                                 <h4>Developers (Frontend & Backend)</h4>
@@ -22,7 +22,7 @@ export default function Services() {
                         </div>
                         <div className='services-img1'>
                             <div>
-                                <img src="/Group 375 (1).png" alt="" />
+                                <img src="/Group 375 (1).png" width={40} />
                             </div>
 
                             <div>
@@ -34,7 +34,7 @@ export default function Services() {
                         </div>
                         <div className='services-img2'>
                         <div>
-                            <img src="/Group 375 (2).png" alt="" />
+                            <img src="/Group 375 (2).png" width={40}/>
                         </div>
                         
                             <div>

@@ -6,8 +6,8 @@ export default function HeroDigital(){
             <div className="hero-container">
             <div className='heroAbout-content'>
                 <div>
-                    <h1>Future-Proof Your Buisness <br /> with <span>Digital Transformation</span></h1><br />
-                            <p>We empower businesses to thrive in the digital landscape with <br /> end-to-end technology and marketing solutions. <br /> solutions. </p> <br />
+                    <h1 className='digitalh1'>Future-Proof Your Buisness with <span>Digital Transformation</span></h1>
+                            <p className='digitalp'>We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions. </p>
                             <button className='btn1'>Getting Started</button>
                             <button className='btn9'>Our Work</button>
                 </div>

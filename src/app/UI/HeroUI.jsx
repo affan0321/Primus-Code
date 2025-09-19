@@ -5,8 +5,8 @@ export default function HeroUI(){
             <div className="hero-container">
             <div className='heroAbout-content'>
                 <div>
-                    <h1>Design Experience That <br /> <span>Connect and Convert</span></h1><br />
-                            <p>We empower businesses to thrive in the digital landscape with <br /> end-to-end technology and marketing solutions. <br /> solutions. </p> <br />
+                    <h1 className='UIh1'>Design Experience That <span>Connect and Convert</span></h1>
+                            <p className='UIp'>We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions.</p>
                             <button className='btn1'>Getting Started</button>
                             <button className='btn9'>Our Work</button>
                 </div>

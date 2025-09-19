@@ -18,3 +18,60 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .talent h3 {
+    width: 90%;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding: 0 10px;
+    margin: 0 auto 20px;
+  }
+
+  .talent p {
+    width: 90%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .talent h3 {
+    width: 85%;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding: 0 20px;
+    margin: 0 auto 20px;
+  }
+
+  .talent p {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .talent h3 {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 1.3;
+    padding: 0 30px;
+    margin: 0 auto 20px;
+  }
+
+  .talent p {
+    width: 85%;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}

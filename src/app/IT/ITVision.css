@@ -13,3 +13,79 @@
 .ITVision h2{
     color: #1C2F58FC;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .ITVision {
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  .ITVision-container {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .ITVision h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .ITVision-container img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .ITVision {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .ITVision-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .ITVision h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .ITVision-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 25px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .ITVision {
+    width: 85%;
+    margin-top: 60px;
+  }
+
+  .ITVision-container {
+    width: 90%;
+    margin-top: 60px;
+  }
+
+  .ITVision h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .ITVision-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
