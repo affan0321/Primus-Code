@@ -13,3 +13,82 @@
 .visionShopify h3{
     padding-bottom: 50px;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .visionShopify {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .visionShopify-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .visionShopify-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .visionShopify h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .visionShopify {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .visionShopify-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .visionShopify-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .visionShopify h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .visionShopify {
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .visionShopify-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .visionShopify-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .visionShopify h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}

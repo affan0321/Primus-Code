@@ -50,3 +50,162 @@
   gap: 15px;
   flex-wrap: wrap;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .offerSeo {
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .offerSeo h3 {
+    font-size: 1.6rem;
+    padding-top: 100px;
+  }
+
+  .offerSeo-p {
+    width: 90%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px 30px;
+  }
+
+  .offerSeo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .offerSeo-card {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .offerSeo-content {
+    width: 100%;
+  }
+
+  .offerSeo-content p {
+    padding-left: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .offerSeo-img {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .offerSeo-img img {
+    width: 36px;
+    height: auto;
+  }
+
+  .offerSeo-content h4 {
+    font-size: 1rem;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .offerSeo {
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .offerSeo h3 {
+    font-size: 1.8rem;
+    padding-top: 120px;
+  }
+
+  .offerSeo-p {
+    width: 85%;
+    font-size: 1rem;
+    padding-bottom: 30px;
+  }
+
+  .offerSeo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .offerSeo-card {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .offerSeo-content p {
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .offerSeo-img img {
+    width: 40px;
+    height: auto;
+  }
+
+  .offerSeo-content h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .offerSeo {
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .offerSeo h3 {
+    font-size: 2rem;
+    padding-top: 140px;
+  }
+
+  .offerSeo-p {
+    width: 80%;
+    font-size: 1.05rem;
+    padding-bottom: 30px;
+  }
+
+  .offerSeo-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .offerSeo-card {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 30px;
+  }
+
+  .offerSeo-content p {
+    padding-left: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .offerSeo-img img {
+    width: 50px;
+    height: auto;
+  }
+
+  .offerSeo-content h4 {
+    font-size: 1.2rem;
+  }
+}

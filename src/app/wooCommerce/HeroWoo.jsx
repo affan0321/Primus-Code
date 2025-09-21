@@ -7,8 +7,8 @@ export default function HeroWoo(){
                 <div className="HeroWebDev-content">
                     <div>
                         <div>
-                            <h1>Power, Flexible eCommerce<br /><span>with WooCommerce</span></h1>
-                            <p>We empower businesses to thrive in the digital <br />landscape with end-to-end technology and marketing <br /> solutions. </p> <br />
+                            <h1 className='woo-h1'>Power, Flexible eCommerce <span>with WooCommerce</span></h1>
+                            <p className='woo-p'>We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions. </p>
                             <button className='btn1'>Getting Started</button>
                             <button className='btn2'>Our Work</button>
                         </div>

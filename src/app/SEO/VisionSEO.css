@@ -8,3 +8,79 @@
     width: 70%;
     margin: 0 auto;
 }
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .visionSeo {
+    width: 95%;
+    margin-top: 60px;
+  }
+
+  .visionSeo h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .visionSeo-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .visionSeo-img img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .visionSeo {
+    width: 90%;
+    margin-top: 80px;
+  }
+
+  .visionSeo h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .visionSeo-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .visionSeo-img img {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .visionSeo {
+    width: 85%;
+    margin-top: 100px;
+  }
+
+  .visionSeo h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .visionSeo-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .visionSeo-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 40px 0;
+  }
+}

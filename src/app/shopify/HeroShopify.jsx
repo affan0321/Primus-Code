@@ -6,8 +6,8 @@ export default function HeroShopify(){
                 <div className="HeroWebDev-content">
                     <div>
                         <div>
-                            <h1>Custom Shopify Development<br />to <span>Grow Your Online Store</span></h1>
-                            <p>We empower businesses to thrive in the digital <br />landscape with end-to-end technology and marketing <br /> solutions. </p> <br />
+                            <h1 className = "shopify-h1">Custom Shopify Development to <span>Grow Your Online Store</span></h1>
+                            <p className = "shopify-p" >We empower businesses to thrive in the digital landscape with end-to-end technology and marketing solutions. </p>
                             <button className='btn1'>Getting Started</button>
                             <button className='btn2'>Our Work</button>
                         </div>

@@ -12,8 +12,8 @@ export default function OfferWoo() {
                             <p>We create fully responsive, mobile-optimized designs that reflect your brand identity and maximize conversions.</p>
                         </div>
                     </div>
-                    <div className='shopify-box'>
-                        <div className='box-containers'>
+                    <div className='shopify-box1'>
+                        <div className='box-containers1'>
                             <h4>Product & Order Management Setup</h4>
                             <p>We streamline your catalog structure, product variations, inventory control, and order flow for an intuitive backend experience.</p>
                         </div>

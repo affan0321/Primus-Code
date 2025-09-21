@@ -23,3 +23,92 @@
 .launch-container p{
     color: #666666;
 }
+
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .launch {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .launch-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .launch-container h1 {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  .launch-container p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .launch {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .launch-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .launch-container h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+
+  .launch-container p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .launch {
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .launch-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .launch-container h1 {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0 30px;
+  }
+
+  .launch-container p {
+    width: 90%;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding: 0 30px;
+  }
+}

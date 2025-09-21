@@ -12,8 +12,8 @@ export default function OfferShopify() {
                         <p>We improve loading speed, mobile responsiveness, user experience, and checkout flows — turning browsers into buyers.</p>
                     </div>
                 </div>
-                <div className='shopify-box'>
-                    <div className='box-containers'>
+                <div className='shopify-box1'>
+                    <div className='box-containers1'>
                         <h4>Shopify Store Setup & Configuration</h4>
                         <p>From product uploads and collections to payment gateways, shipping, and tax settings — we’ll get your store running smoothly and compliantly.</p>
                     </div>
