@@ -46,6 +46,14 @@
   margin: 12px;
 }
 
+.paidh1{
+  width: 500px;
+}
+
+.paidp{
+  width: 550px;
+}
+
 /* --- Small screens: 340px to 480px --- */
 @media (max-width: 480px) {
   .heroMobDev {

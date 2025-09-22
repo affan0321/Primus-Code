@@ -1,4 +1,4 @@
-/* .core{
+.core{
   width: 80%;
   margin: 0 auto;
 }
@@ -16,7 +16,7 @@
 
 .box{
   width: 250px;
-  height: 150px;
+  height: 180px;
   align-content: center;
   border-radius: 12px;
   border: 2px solid lightgray;
@@ -34,6 +34,8 @@
 
 .box-inside h3{
   color: #1C2F58FC;
+  font-size: 22px;
+  /* border: 2px solid black; */
 }
 .box-inside p{
   color: #838696;
@@ -59,67 +61,107 @@
   margin-top: 30px;
 }
 
-
+/* --- Small screens: 340px to 480px --- */
 @media (max-width: 480px) {
   .core {
     width: 95%;
-  }
-
-  .core-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .core-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .core-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .box-container1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .box {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .box-inside {
-    width: 90%;
     margin: 0 auto;
-    text-align: center;
-  }
-}
-
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  .core {
-    width: 90%;
   }
 
   .core-container {
     flex-direction: column;
     gap: 40px;
+    align-items: center;
+    text-align: center;
   }
 
   .core-content {
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
   .core-text {
     width: 100%;
+    padding: 0 10px;
+  }
+
+  .core-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .core-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .box-inside h3 {
+    font-size: 1rem;
+  }
+
+  .box-inside p {
+    font-size: 0.95rem;
+  }
+
+  .box-container1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .core {
+    width: 90%;
+  }
+
+  .core-container {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
     text-align: center;
+  }
+
+  .core-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .core-text {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .core-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .core-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 25px;
+  }
+
+  .box-inside h3 {
+    font-size: 1.1rem;
+  }
+
+  .box-inside p {
+    font-size: 1rem;
   }
 
   .box-container1 {
@@ -127,16 +169,114 @@
     justify-content: center;
     gap: 30px;
   }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .core {
+    width: 85%;
+  }
+
+  .core-container {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .core-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 40px;
+    
+  }
+
+  .core-text {
+    width: 80%;
+    padding: 0 30px;
+  }
+
+  .core-text h2 {
+    font-size: 2rem;
+  }
+
+  .core-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
 
   .box {
-    width: 45%;
-    min-width: 250px;
-    height: auto;
+    width: 50%;
+    max-width: 270px;
+    /* height: auto; */
+    padding: 5px;
   }
 
-  .box-inside {
-    width: 90%;
-    margin: 0 auto;
+  .box-inside h3 {
+    font-size: 1.2rem;
+  }
+
+  .box-inside p {
+    font-size: 1.05rem;
+  }
+
+  .box-container1 {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
   }
 }
- */
+
+@media (max-width: 1024px) and (min-width: 340px) {
+  .core-container {
+    flex-direction: column;
+  }
+
+  .core-text {
+    order: -1;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .core-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .core-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .core-text {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .box-container1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .box {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box-inside h3 {
+    font-size: 1.1rem;
+  }
+
+  .box-inside p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

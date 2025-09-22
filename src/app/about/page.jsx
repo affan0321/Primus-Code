@@ -4,6 +4,7 @@ import Navbar from "../componentes/Navbar";
 import Offer from "../componentes/Offer";
 import Questions from "../componentes/Questions";
 import StatsOdometer from "../componentes/StatsOdometer";
+import Core from "./Core";
 import HeroAbout from "./HeroAbout";
 
 export default function AboutUs() {
@@ -13,7 +14,7 @@ export default function AboutUs() {
             <HeroAbout />
             <StatsOdometer />
             {/* <BoxGrid /> */}
-            {/* <Core /> */}
+            <Core />
             <Banner />
             <Offer />
             <Questions />
