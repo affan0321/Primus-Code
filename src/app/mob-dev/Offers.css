@@ -61,17 +61,6 @@
 
 /* keep your existing styles exactly as they are */
 
-.offers {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.9s ease-out;
-}
-
-.offers.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 /* --- Small screens: 340px to 480px --- */
 @media (max-width: 480px) {

@@ -46,7 +46,11 @@
     color: #000000;
     font-size: 13px;
     /* border: 2px solid black; */
-} 
+}
+
+/* .pw{
+  width: 100%;
+} */
 
 .offering-container{
      width: 80%;

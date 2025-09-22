@@ -13,7 +13,7 @@ export default function OfferAI(){
                                 <h5>AI Powered App & Web Features</h5>
                             </div>
                             <div className='box-p'>
-                                <p>Enhance your digital platforms with AI features like chatbots, smart search, personalization, and image recognition.</p>
+                                <p className='pw'>Enhance your digital platforms with AI features like chatbots, smart search, personalization, and image recognition.</p>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ export default function OfferAI(){
                                 <h5>Predictive Analysis & Forecasting</h5>
                             </div>
                             <div className='box-p'>
-                                <p>Use machine learning models to identify patterns, predict trends, and make better business decisions — in real time.</p>
+                                <p className='pw'>Use machine learning models to identify patterns, predict trends, and make better business decisions — in real time.</p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function OfferAI(){
                                 <h5>Natural Language Processing (NLP)</h5>
                             </div>
                             <div className='box-p'>
-                                <p>Build tools that understand and generate human language — from AI writers to sentiment analysis and voice-to-text systems.</p>
+                                <p className='pw'>Build tools that understand and generate human language — from AI writers to sentiment analysis and voice-to-text systems.</p>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ export default function OfferAI(){
                                 <h5>Recommendation Engines</h5>
                             </div>
                             <div className='box-p'>
-                                <p>Boost user engagement with personalized product, content, or service suggestions based on intelligent data patterns.</p>
+                                <p className='pw'>Boost user engagement with personalized product, content, or service suggestions based on intelligent data patterns.</p>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function OfferAI(){
                                 <h5>Automation & Process Optimization</h5>
                             </div>
                             <div className='box-p'>
-                                <p>Deploy AI to streamline repetitive tasks, reduce errors, and make workflows more efficient across departments.</p>
+                                <p className='pw'>Deploy AI to streamline repetitive tasks, reduce errors, and make workflows more efficient across departments.</p>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ export default function OfferAI(){
                                 <h5>Custom AI Model Development</h5>
                             </div>
                             <div className='box-p'>
-                                <p>Train and deploy custom models specific to your industry, users, and data — fully tailored and ready to scale.</p>
+                                <p className='pw'>Train and deploy custom models specific to your industry, users, and data — fully tailored and ready to scale.</p>
                             </div>
                         </div>
                     </div>
