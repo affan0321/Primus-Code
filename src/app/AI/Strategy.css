@@ -1,0 +1,116 @@
+.strategy-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.strategy{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.strategy-container p{
+    color: #666666; 
+    width: 550px;
+}
+
+.strategy-container h3{
+    color: #1C2F58FC;
+}
+
+span{
+    color: #5454E8;
+}
+
+
+/* --- Small screens: 340px to 480px --- */
+@media (max-width: 480px) {
+  .strategy {
+    width: 95%;
+    margin-top: 30px;
+  }
+
+  .strategy-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .strategy-container h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .strategy-container p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .strategy-container img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* --- Medium screens: 481px to 768px --- */
+@media (max-width: 768px) {
+  .strategy {
+    width: 90%;
+  }
+
+  .strategy-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .strategy-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .strategy-container p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .strategy-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* --- Tablet screens: 769px to 1024px --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .strategy {
+    width: 85%;
+  }
+
+  .strategy-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .strategy-container h3 {
+    font-size: 2rem;
+  }
+
+  .strategy-container p {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .strategy-container img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
